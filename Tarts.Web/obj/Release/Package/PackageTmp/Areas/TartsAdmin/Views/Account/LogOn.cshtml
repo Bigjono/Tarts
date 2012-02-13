@@ -1,0 +1,51 @@
+﻿@using Tarts.Web.Areas.TartsAdmin.Models.Account
+@model LogonModel
+@{
+    ViewBag.Title = "Log On";
+    Layout = "~/Areas/TartsAdmin/Views/Shared/_Logon.cshtml";
+}
+
+<h1>Welcome Tarts!</h1>
+<p>Please enter your email and password below to login to the website admin</p>
+
+
+@if (!Html.ViewData.ModelState.IsValid) {<div class="alert-message error"><p>Login was unsuccessful. Please correct the errors and try again.</p></div>}
+
+@using (Ajax.BeginForm("LogOn", new AjaxOptions()))
+{
+    <div>
+    <br/>
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <div class="clearfix">
+                @Html.LabelFor(m => m.UserName, "Email")
+                <div class="input">
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+            </div>
+
+             <div class="clearfix">
+                @Html.LabelFor(m => m.Password)
+                <div class="input">
+                   @Html.PasswordFor(m => m.Password)
+                   @Html.ValidationMessageFor(m => m.Password)
+                </div>
+            </div>
+
+            <div class="clearfix">
+           @Html.LabelFor(m => m.RememberMe)     
+            <div class="input">
+               @Html.CheckBoxFor(m => m.RememberMe)
+                
+                </div>
+            </div>
+
+           <div class="actions">
+                <input type="submit" class="btn primary" value="Log On" />
+            </div>
+        </fieldset>
+    </div>
+}
+

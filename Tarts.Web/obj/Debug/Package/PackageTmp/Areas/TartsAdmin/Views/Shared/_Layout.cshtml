@@ -1,0 +1,74 @@
+﻿@using Tarts.Web.Infrastructure.Helpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    @if (IsSectionDefined("pagetitles"))  {  @RenderSection("pagetitles") }
+    else   {  <title>Tarts Admin</title>  }
+
+    @Assets.CSSFile("themes/admin/bootstrap.css")
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" id="theme">
+    @Assets.CSSFile("themes/admin/default.css")
+    @RenderSection("additionalCss", required: false)
+    @Assets.JSSLib("jquery-1.6.2.min.js")
+    @Assets.JSSLib("jquery-ui-1.8.14.min.js")
+    @Assets.JSSLib("modernizr-1.7.min.js")
+    @RenderSection("additionalScripts", required: false)
+    @Assets.JSSLib("jquery.validate.min.js")
+    @Assets.JSSLib("jquery.validate.unobtrusive.min.js")
+    @Assets.JSS("adminCommon.js")
+</head>
+<body>
+<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Tarts Admin</a>
+          <ul class="nav">
+            <li class="activejjjj">@Html.ActionLink("Pages", "Index", "Pages", null, null) </li>
+            <li> @Html.ActionLink("Images", "Index", "Images",null,null) </li>
+            <li> @Html.ActionLink("Events", "Index", "Events",null,null) </li>
+            <li> @Html.ActionLink("Artists", "Index", "Artists",null,null) </li>
+            <li> @Html.ActionLink("Galleries", "Index", "Galleries",null,null) </li>
+            <li> @Html.ActionLink("Users", "Index", "Users",null,null) </li>
+            <li> @Html.ActionLink("Settings", "Index", "Settings",null,null) </li> 
+          </ul>
+          @if (HttpContext.Current.Request.IsAuthenticated)
+          {
+              <span class="current-user">
+                @Html.Gravatar(HttpContext.Current.User.Identity.Name, 20)
+                
+                @Html.ActionLink("[Log out]", "LogOff", "Account", null, null)
+              </span>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert-message error">
+        <a class="close" href="#">×</a>
+            <p>@ViewBag.ErrorMessage</p>
+        </div>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert-message success">
+        <a class="close" href="#">×</a>
+            <p>@ViewBag.Message</p>
+        </div>
+    }
+
+       @RenderBody()
+       
+      <footer>
+        <p>&copy; Tarts @DateTime.Now.Year</p>
+      </footer>
+
+    </div> <!-- /container -->
+  
+   
+</body>
+</html>

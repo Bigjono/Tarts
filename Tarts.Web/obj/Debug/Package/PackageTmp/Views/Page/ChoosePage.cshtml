@@ -1,0 +1,16 @@
+﻿@model Tarts.Content.Page
+@{
+    ViewBag.Title = "View";
+}
+
+@if (Model != null)
+{
+    
+    @Html.Raw(Model.Content)
+}
+else
+{
+    <a href="/"><img src="/content/themes/2012/Images/404.png" style="width:650px" title="404"/></a>
+}
+
+

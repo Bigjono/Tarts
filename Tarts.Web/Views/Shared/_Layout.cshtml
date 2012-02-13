@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    @Assets.CSSFile("themes/2012/bootstrap.css")
+    @Assets.CSSFile("themes/2012/style.css")
+    @Assets.CSSFile("fbgallery.css")
+    @Assets.CSSFile("coin-slider-styles.css")
+    @RenderSection("additionalCss", required: false) 
+    <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+    <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+    @Assets.JSSLib("jquery-1.6.2.min.js")
+    <script src="http://connect.facebook.net/en_US/all.js#appId=300745476614097&amp;xfbml=1"></script>
+    @Assets.JSS("FBGallery.js")
+    @Assets.JSS("coin-slider.js")
+    @RenderSection("additionalScripts", required: false)
+    @Assets.JSS("tarts.js")
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28944006-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</head>
+
+<body>
+
+@Html.Partial("Partials/_FacebookJs")
+	
+<div class="header  ">
+    <div class="header-left"><a href="/"><img src="/Content/themes/2012/Images/translogo2.png"/></a></div>
+  @*  <div class="header-right"><a href="/buytickets"><img src="/Content/themes/2012/Images/earlybird-tickets.png"/></a></div>*@
+    <div class="clear"></div>
+</div>
+<div class="page">
+<div class="container">
+    <section id="navigation">
+    <div style="z-index: 5;" class="topbar-wrapper">
+    <div data-dropdown="dropdown" class="topbar">
+        <div class="topbar-inner">
+        <div class="container">
+            <ul class="nav">
+            <li><a href="/" title="Apple Tarts">Home</a></li>
+            <li><a href="/about" title="About">About</a></li>
+            <li><a href="/events/apple-tarts-2012/tickets">Tickets</a></li>
+            <li><a href="/Festival-Info" title="Info">Festival Info</a></li>
+            <li><a href="/events/apple-tarts-2012/lineup">Lineup</a></li>
+            <li><a href="/galleries/2011">Gallery</a></li>
+            <li><a href="/contacts" title="Contacts">Contacts</a></li>
+            </ul>
+        </div>
+        </div><!-- /topbar-inner -->
+    </div><!-- /topbar -->
+    </div>
+    </section>
+    <div id="tartsSlider">
+        <a href="/galleries/2011"><img src="/Content/themes/2012/Images/2011-gallery-banner.png" alt="banner 1" /></a>
+        <a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/tartsrepublic.jpg" alt="Tickets" /></a>
+        <a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/buytickets.jpg" alt="Tickets" /></a>
+        <a href="/about"><img src="/Content/themes/2012/Images/tarts.jpg" alt="Tarts" /></a>
+    </div>
+    <div class="row">
+        <div class="span11">
+            @Html.Partial("Partials/_PageMessages")
+            @if (ViewBag.Customer != null)
+            {
+                
+            }
+            @RenderBody()
+        </div> <!-- end left container -->
+        <div class="span5">
+            <iframe width="280" height="280" src="http://www.youtube.com/embed/T5gfQMtw0-w" frameborder="0" allowfullscreen></iframe><br/><br/>
+            @Html.Partial("Partials/_FacebookLike")<br/><br/>
+            @Html.Partial("Partials/_TwitterFeed")
+            @Html.Partial("Partials/_Poll")
+        </div> <!-- end right container -->
+    </div>
+
+</div><!-- end container -->
+</div><!-- page -->
+<footer>
+    <div class="container">
+        <ul>
+            <li>&copy; Company @DateTime.Now.Year | </li>
+            <li><a href="/contacts" title="Contacts">Contacts</a> | </li>
+            <li><a href="/sponsors" title="sponsors">Sponsors</a> | </li>
+            <li><a href="/faqs" title="FAQs">FAQs</a></li>
+        </ul>
+        <div id="social">
+            <a href="https://www.facebook.com/groups/206847262692869/" target="_blank"><image src="/Content/themes/2012/Images/facebook_32.png" title="facebook" /></a>
+            <a href="https://twitter.com/#!/TweetingTarts" target="_blank"><image src="/Content/themes/2012/Images/twitter_32.png" title="twitter" /></a>
+@*            <image src="/Content/themes/2012/Images/youtube_32.png" title="facebook" />
+            <image src="/Content/themes/2012/Images/flickr_32.png" title="facebook" />
+            <image src="/Content/themes/2012/Images/myspace_32.png" title="facebook" />
+            <image src="/Content/themes/2012/Images/google_plus_32.png" title="facebook" />*@
+        </div>
+    </div>
+</footer>
+</body>
+</html>

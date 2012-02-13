@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2" ModuleId="Tarts" />
+  <Module PersistentId="2AD4FC3E-E61A-4360-8779-572E413109EF" ModuleId="Tarts.Web" />
+  <Module PersistentId="Bronson.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Bronson.Utils" />
+  <Module PersistentId="Tarts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Tarts_1" />
+</Modules>

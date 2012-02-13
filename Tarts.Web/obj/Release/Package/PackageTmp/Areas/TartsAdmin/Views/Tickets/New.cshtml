@@ -1,0 +1,24 @@
+﻿@using Tarts.Web.Areas.TartsAdmin.Models.Events
+@model NewTicketPostModel
+@{ ViewBag.Title = "New Ticket";
+   Layout = "../Shared/_Layout.cshtml"; }
+
+
+<h2>Create New Ticket for @Model.EventSlug</h2>
+@using (@Html.BeginForm("Create", "Tickets", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <div class="clearfix"><label>Event</label>
+    <div class="input"><input type="text" class="disabled" disabled="disabled" value="@Model.EventSlug" />
+    <input type="hidden" name="EventSlug" value="@Model.EventSlug"/></div></div>
+    <div class="clearfix"><label>Name</label>
+    <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+    <div class="clearfix"><label>Ticket Price</label>
+    <div class="input"><div class="input-prepend">
+    <span class="add-on">£</span><input type="text" name="Price" class="input-small" value="@Model.Price" /></div></div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Create Event Ticket"/>
+        @Html.ActionLink("Cancel", "Index", "Events", null, new { @class = "btn" })
+    </div>
+    </fieldset>
+}

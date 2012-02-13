@@ -1,0 +1,19 @@
+﻿@model Tarts.Content.Page
+
+@using (@Html.BeginForm("Update", "Pages", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="clearfix"><label>Name</label>
+    <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+    <div class="clearfix"><label>Content</label>
+    <div class="input">
+    <textarea name="Content" class="editor" rows="30" style="width: 90%">@Model.Content</textarea>
+    </div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save changes">
+        @Html.ActionLink("Back", "Index", "Pages", null, new { @class = "btn" })
+          
+    </div>
+}
+
+

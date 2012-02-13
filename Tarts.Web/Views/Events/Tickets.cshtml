@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Events
+@model Event
+<h2>Tickets <span class="subheading"> - @Model.Name (@Model.StartTime.ToString("dd/MMM/yyyy"))</span></h2>
+
+@if (Model.Tickets.Count > 0)
+{
+    <table class="">
+    <thead>
+    <tr>
+    <th style="width: 100px">Price</th>
+    <th>Name</th>
+    <th style="width: 100px">Purchase</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var itm in Model.Tickets.Where(x => x.Enabled && x.Remaining > 0))
+    {
+        <tr>
+            <td>@itm.Price.ToCurrencyString()</td>
+            <td>@itm.Name</td>
+            <td> @Html.ActionLink("Buy Ticket", "CustomerAccount", "Booking", new { eventName=itm.Event.Slug, ticketID = itm.ID }, new { @class = "btn primary" }) 
+            </td>
+        </tr>
+    }
+    </tbody>
+    </table>
+}
+<br/>
+@Html.Raw(Model.Description)

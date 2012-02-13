@@ -1,0 +1,16 @@
+﻿@using Tarts.Events
+@model Artist
+@{ ViewBag.Title = "New Artist";
+   Layout = "../Shared/_Layout.cshtml"; }
+@section additionalCss {
+    @Assets.CSSFile("jHtmlArea.css")
+    @Assets.CSSFile("jHtmlArea.ColorPickerMenu.css")
+}
+@section additionalScripts {
+   
+    @Assets.JSS("jHtmlEditor.js")
+    @Assets.JSS("jHtmlArea.ColorPickerMenu-0.7.0.min.js")
+}
+
+<h2>New Artist</h2>
+@Html.Partial("_Edit")

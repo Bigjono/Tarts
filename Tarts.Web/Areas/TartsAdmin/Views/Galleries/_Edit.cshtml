@@ -1,0 +1,57 @@
+﻿@using Tarts.Content
+@model Gallery
+
+@using (@Html.BeginForm("Update", "Galleries", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="clearfix"><label>Name</label>
+    <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+    <div class="clearfix"><label>Slug</label>
+    <div class="input"><input type="text" name="Slug" value="@Model.Slug" /></div></div>
+    <div class="clearfix"><label>Date</label>
+    <div class="input"><input type="text" name="Date" class="datepicker" value="@Model.Date.ToString("dd/MM/yyyy")" /></div></div>
+    <div class="clearfix"><label>Event</label>
+    <div class="input">
+        <select name="EventID">
+            <option value="">N/A</option>
+            @foreach (var evt in ViewBag.Events)
+            {
+                <option value="@evt.ID" @if(evt.ID == Model.EventID) {@Html.Raw("selected='selected'")}>@evt.Name</option>
+            }
+        </select>
+    </div></div>
+    <div class="clearfix"><label>Default Image</label>
+    <div class="input media-item">
+        <input type="hidden" id="DefaultImageID" name="DefaultImageID" value="@Model.DefaultImageID"/>
+        @Assets.Thumbnail(Model.DefaultImage, "defImg")
+    </div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save changes">
+        @Html.ActionLink("Back", "Index", "Galleries", null, new { @class = "btn" })
+          
+    </div>
+}
+
+@if (Model.ID != 0)
+{
+
+    <h3>Gallery Photos  @Html.ActionLink("refresh", "Edit", "Galleries", new { Model.ID }, null)</h3>
+    <ul class="galleryItems">
+        @foreach (var img in Model.Photos)
+        {
+            <li><a class="galleryitem" id="@img.ID" rel="@img.Thumb">@Assets.Thumbnail(img, img.ID.ToString(), 75)</a>
+            <br/>
+            @Html.ActionLink("Remove", "RemovePhoto", "Galleries", new { GalleryID = Model.ID, PhotoID = img.ID }, null)
+            </li>
+        }
+    </ul>
+    <div class="clear"></div>
+    <br/>
+        Html.RenderAction("FileUpload", "Images", new { uploadContext = "gallery_" + Model.ID });
+}
+else
+{
+   <div class="alert-message block-message info">
+        <p><strong>Heads up!</strong> Save gallery first before uploading photos</p>
+   </div>
+}

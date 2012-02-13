@@ -1,0 +1,14 @@
+﻿@if (ViewBag.ErrorMessage != null)
+{
+<div class="alert-message error">
+<a class="close" href="#">×</a>
+    <p>@ViewBag.ErrorMessage</p>
+</div>
+}
+@if (ViewBag.Message != null)
+{
+<div class="alert-message success">
+<a class="close" href="#">×</a>
+    <p>@ViewBag.Message</p>
+</div>
+}

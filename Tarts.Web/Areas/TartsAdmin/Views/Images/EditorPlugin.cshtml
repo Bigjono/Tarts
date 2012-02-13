@@ -1,0 +1,62 @@
+﻿@using Tarts.Assets
+@model IList<Image>
+@{
+    Layout = "../Shared/_Empty.cshtml"; 
+}
+
+
+<div id="imgSelectorBackground"></div>
+<div id="imgSelector">
+<div class="heading">
+<h3>Select Image</h3>
+</div>
+<div class="imagesize">
+<label><input type="radio" name="imagesize" value="Thumbnail"/> Thumbnail</label>
+<label><input type="radio" name="imagesize" value="Medium" checked="checked"/> Medium</label>
+<label><input type="radio" name="imagesize" value="Large"/> Large</label>
+</div>
+<div class="clear"></div>
+<ul class="media-grid">
+    @foreach (var img in Model)
+    {
+        <li class="selectImg"><a>@Assets.Thumbnail(img, img.ID.ToString(), 75)</a>
+            <input type="hidden" class="thumbnail" value="@img.Thumb"/>
+            <input type="hidden" class="medium" value="@img.Medium"/>
+            <input type="hidden" class="large" value="@img.Large"/>
+        </li>
+    }
+</ul>
+
+
+Image Style: <input type="text" id="imageStyle" value="margin:10px; float:left; "/>
+Image Name: <input type="text" id="imageName" value=""/>
+
+<input type="hidden" id="selectedImage" value=""/>
+<input type="hidden" id="selectedImageHtml" value=""/>
+@*<a id="insertSelectedImage" title="insert image">Insert Image</a>*@
+</div>
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        EditorCustomFeatures.AttachImageButtons();
+        $(".selectImg").click(function () {
+            var size = $('input:radio[name=imagesize]:checked').val();
+            $("#selectedImage").val($(this).find(".large").val());
+            if (size == "Thumbnail") {
+                $("#selectedImage").val($(this).find(".thumbnail").val());
+            }
+            if (size == "Medium") {
+                $("#selectedImage").val($(this).find(".medium").val());
+            }
+            $("#selectedImageHtml").val("<img src='" + $("#selectedImage").val() + "' alt='" + $("#imageName").val() + "' style='" + $("#imageStyle").val() + "' />");
+
+
+            EditorCustomFeatures.InsertCustomImage();
+            return false;
+        });
+
+
+    });
+
+</script>

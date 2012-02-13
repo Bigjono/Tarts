@@ -1,0 +1,15 @@
+﻿@{ ViewBag.Title = "Edit Gallery";
+   Layout = "../Shared/_Layout.cshtml"; }
+@section additionalCss {
+    @Assets.CSSFile("jquery.fileupload-ui.css")
+}
+@section additionalScripts {
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    @Assets.JSSLib("jquery.iframe-transport.js")
+    @Assets.JSSLib("jquery.fileupload.js")
+    @Assets.JSSLib("jquery.fileupload-ui.js")
+    @Assets.JSS("pg_admin_edit_gallery.js")
+}
+
+<h2>Edit Gallery</h2>
+ @Html.Partial("_Edit")

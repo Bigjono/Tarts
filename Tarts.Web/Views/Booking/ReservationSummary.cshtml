@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Bookings
+@model Booking
+@*<p>Purchase @Model.Event.Name @Model.Ticket.Name - Ref @Model.Reference</p>
+
+<table class="">
+    <thead>
+    <tr>
+    <th>Ticket</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Booking Fee</th>
+    <th>Total Price</th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>@Model.Ticket.Name</td>
+    <td>@Model.TicketPrice.ToCurrency()</td>
+    <td>@Model.Quantity</td>
+    <td>@Model.FeesTotal.ToCurrency()</td>
+    <td>@Model.Total.ToCurrency()</td>
+    </tr>
+    </tbody>
+    </table>*@
+    
+
+    <div class="page-header">
+    <h1>Booking Summary</h1>
+    </div>
+
+    @using (@Html.BeginForm("ReservationSummary", "Booking", new { bookingID = @Model.ID }, FormMethod.Post, new { @class = "standardform" }))
+    {
+    <fieldset>
+    <input type="hidden" name="bookingID" value="@Model.ID"/>
+    <div class="clearfix"><label>Primary Contact</label>
+    <div class="input"><p>@Model.Customer.FirstName @Model.Customer.Surname</p></div></div>
+    <div class="clearfix"><label>Booking Email</label>
+    <div class="input"><p>@Model.Customer.Email</p></div></div>
+    <div class="clearfix"><label>Ticket</label>
+    <div class="input"><p>@Model.Event.Name @Model.Ticket.Name</p></div></div>
+    <div class="clearfix"><label>Quantity</label>
+    <div class="input"><input class="span1" type="text" name="Quantity" value="@Model.Quantity"/>
+    <input type="submit"class="btn" value="Update"/>
+    </div></div>
+    <div class="clearfix"><label>Ticket Price</label>
+    <div class="input"><p>@Model.TicketPrice.ToCurrency() <span class="help-inline"> plus @Model.BookingFee.ToCurrency() booking fee</span></p></div></div>
+    <div class="clearfix"><label>Booking Total</label>
+    <div class="input"><p>@Model.Total.ToCurrency()</p></div></div>
+    </fieldset>
+    }
+   <form action="/Bookings/MakePayment/@Model.ID.EncryptInteger()" method="POST">
+        <input type="hidden" name="bookingID" value="@Model.ID.EncryptInteger()"/>
+        <input class="btn primary" type="submit" value="Make Payment"/>
+   </form>
+ 
+       
+    

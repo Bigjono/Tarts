@@ -1,0 +1,13 @@
+﻿@{ ViewBag.Title = "Edit Event";
+   Layout = "../Shared/_Layout.cshtml"; }
+@section additionalCss {
+    @Assets.CSSFile("jHtmlArea.css")
+    @Assets.CSSFile("jHtmlArea.ColorPickerMenu.css")
+}
+@section additionalScripts {
+   
+    @Assets.JSS("jHtmlEditor.js")
+    @Assets.JSS("jHtmlArea.ColorPickerMenu-0.7.0.min.js")
+}
+<h2>Edit Event</h2>
+ @Html.Partial("_Edit")

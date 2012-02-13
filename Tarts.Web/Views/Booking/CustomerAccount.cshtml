@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Web.Models.Bookings
+@model CreateCustomerViewModel
+<h2>Purchase @Model.EventName @Model.TicketName</h2>
+
+<div id="newUser">
+@using (@Html.BeginForm("AccountLogin", "Booking", new { eventName = @Model.EventSlug, ticketID = @Model.TicketID }, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <legend>Existing User - Sign In</legend>
+    <div class="clearfix"><label>Email</label>
+    <div class="input"><input type="text" name="Email" value="" /></div></div>
+    <div class="clearfix"><label>Password</label>
+    <div class="input"><input type="password" name="Password" value="" /></div></div>
+    
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Next"/>
+        <a href="mailto:info@appletarts.co.uk">Forgotten Password</a>
+        
+    </div>
+    </fieldset>
+}
+</div>
+<div id="newUser">
+@using (@Html.BeginForm("CustomerAccount", "Booking", new { eventName=@Model.EventSlug, ticketID=@Model.TicketID}, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <legend>New User - Create Acount</legend>
+    <div class="clearfix"><label>FirstName</label>
+    <div class="input"><input type="text" name="FirstName" value="@Model.FirstName" /></div></div>
+    <div class="clearfix"><label>Surname</label>
+    <div class="input"><input type="text" name="Surname" value="@Model.Surname" /></div></div>
+    <div class="clearfix"><label>Email</label>
+    <div class="input"><input type="text" name="Email" value="@Model.Email" /></div></div>
+    <div class="clearfix"><label>Password</label>
+    <div class="input"><input type="password" name="Password" value="" /></div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Next">
+    </div>
+    </fieldset>
+}
+</div>

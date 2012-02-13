@@ -1,0 +1,48 @@
+﻿
+a { cursor: pointer;}
+h1 a, h2 a, h3 a { font-size: 0.7em;padding: 0px 3px;font-weight: normal;}
+.standardform p { padding-top: 6px;}
+
+#fileupload form { margin-bottom: 0;}
+ul.galleryItems  { margin: 0px;padding: 0px;}
+ul.galleryItems li { display: block;list-style: none;margin: 0px;float: left;text-align: center;margin: 2px 4px;}
+ul.galleryItems li a { margin-bottom: 1px; }
+
+ul.eventArtists li {display: block;list-style: none;margin: 0px;float: left;text-align: center;margin: 2px 4px;width: 150px; overflow:hidden}
+
+.current-user { text-align: right;float: right;padding-top: 10px;}
+.current-user img { opacity:0.4; filter:alpha(opacity=40);vertical-align: middle;}
+.current-user a { padding-top: 15px; }
+
+#imageDetails .media-item { margin: 10px 0px;overflow: hidden;display: block;}
+
+.picture-frame { text-align: center;font-size: 0.8em;}
+.picture-frame img {  box-shadow: 0 1px 3px #AAAAAA; margin: 5px; padding: 4px;}
+.picture-frame img:hover {  box-shadow: 0 2px 15px #AAAAAA;}
+
+.media-item img, img.media-item, ul.galleryItems li img {  padding: 4px; border: 1px solid #ddd; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;
+ -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);}
+
+.media-grid .select { margin: 0 0 8px 10px;cursor: pointer;}
+
+.media-grid .select { border: 1px solid #DDDDDD;border-radius: 4px 4px 4px 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);float: left;margin: 0 0 8px 10px;
+padding: 4px;}
+
+.media-grid a { margin: 0 0 8px 10px;}
+
+#assetImages { height: 500px;overflow-y: scroll;}
+.standardform {}
+.clear { clear: both;}
+
+#imgSelector { padding: 10px;}
+#imgSelector .heading { float: left;width: 200px;}
+#imgSelector .imagesize { float: right;width: 200px;text-align: right;font-weight: bold;}
+#imgSelector .imagesize label{ font-weight: bold;font-size: 0.8em;width: auto;margin-right: 10px;}
+#imgSelector .media-grid { margin: 0px 0px 10px -10px;height: 420px;overflow-y: scroll;}
+
+
+#popupbackground { -moz-opacity:.70; filter:alpha(opacity=70); opacity:.70;   display:none;  position:fixed;  
+_position:absolute;  height:100%;  width:100%;  top:0;  left:0;  background:#000000;  border:1px solid #cecece;  z-index:1; }
+
+.popupcontainer{  display:none;  position:fixed;  _position:absolute; height:500px;  width:900px;  
+background:#FFFFFF;  border:2px solid #cecece;  z-index:2;overflow-y: scroll;padding: 10px 30px;  }

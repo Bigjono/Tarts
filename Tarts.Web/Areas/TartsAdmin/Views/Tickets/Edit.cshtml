@@ -1,0 +1,35 @@
+﻿@{ ViewBag.Title = "Edit Ticket";
+   Layout = "../Shared/_Layout.cshtml"; }
+@using Tarts.Bookings
+@model Ticket
+
+<h2>Edit @Model.Event.Name Ticket</h2>
+
+@using (@Html.BeginForm("Update", "Tickets", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="clearfix"><label>Name</label>
+    <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+    <div class="clearfix"><label>Price</label>
+    <div class="input"><div class="input-prepend">
+    <span class="add-on">£</span><input type="text" name="Price" class="input-small" value="@Model.Price" /></div></div></div>
+    <div class="clearfix"><label>Booking Fee</label>
+    <div class="input"><div class="input-prepend">
+    <span class="add-on">£</span><input type="text" name="BookingFee" class="input-small" value="@Model.BookingFee" /></div></div></div>
+    <div class="clearfix"><label>Allocation</label>
+    <div class="input"><input type="text" name="Allocation" class="input-small" value="@Model.Allocation" /></div></div>
+    <div class="clearfix"><label>Enabled</label>
+    <div class="input inputs-list"><label>@Html.CheckBoxFor(m => m.Enabled)<span>Yes/No</span></label></div></div>
+    <div class="clearfix"><label>Total Sold</label>
+    <div class="input inputs-list"><label>@Model.Sold</label></div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save changes"/>
+        @Html.ActionLink("Back", "Edit", "Events", new { id = Model.Event.ID }, new { @class = "btn" })
+    </div>
+    </fieldset>
+    
+}
+
+
+

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "../Shared/_Layout.cshtml";
+}
+@using Tarts.Content
+@model IList<Gallery>
+<h2>Tarts Galleries</h2>
+
+
+<table class="bordered-table zebra-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Date</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+
+@foreach (var itm in Model)
+{
+    <tr>
+        <td>@itm.ID</td>
+        <td>@itm.Name</td>
+        <td>@itm.Date.ToString("yyyy MMM")</td>
+        <td>
+            @Html.ActionLink("edit", "Edit", "Galleries", new { itm.ID }, new { @class = "btn primary" })
+            @Html.ActionLink("delete", "Destroy", "Galleries", new { itm.ID }, new { @class = "btn " })
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+<div class="well">
+@Html.ActionLink("Add New Gallery", "New", "Galleries", null, new { @class = "btn primary large" })
+</div>

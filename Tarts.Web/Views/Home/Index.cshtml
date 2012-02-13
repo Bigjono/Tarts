@@ -1,0 +1,11 @@
+﻿@using Tarts.Content
+@model Tarts.Content.Page
+@{ ViewBag.Title = "Apple Tarts"; }
+
+
+
+@if (Model != null)
+{
+    
+    @Html.Raw(Model.Content)
+}

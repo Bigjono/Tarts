@@ -1,0 +1,119 @@
+﻿@using Tarts.Events
+@model Event
+
+@using (@Html.BeginForm("Update", "Events", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="row">
+            <div class="span8">
+            <div class="clearfix"><label>Name</label>
+            <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+            <div class="clearfix"><label>Slug</label>
+            <div class="input"><input type="text" name="Slug" value="@Model.Slug" /></div></div>
+            <div class="clearfix"><label>Start Time</label>
+            <div class="input"><input type="text" name="StartTime" class="datepicker" value="@Model.StartTime.ToString("dd/MM/yyyy")" /></div></div>
+            <div class="clearfix"><label>End Time</label>
+            <div class="input"><input type="text" name="EndTime" class="datepicker" value="@Model.EndTime.ToString("dd/MM/yyyy")" /></div></div>
+        </div>
+        <div class="span8">
+            <div class="well">
+                <h3>Quick Stats</h3>
+                <table>
+                <tr><td style="width:100px;">Total Allocation</td><td>@Model.TotalAllocation</td></tr>
+                <tr><td style="width:100px;">Total Sold</td><td>@Model.TotalSold</td></tr>
+                <tr><td style="width:100px;">Sales Total</td><td>£0</td></tr>
+                <tr><td style="width:100px;">Booking Fees</td><td>£0</td></tr>
+                <tr><td colspan="2">@Html.ActionLink("View Bookings", "List", "Bookings", new { Model.ID }, null)</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"><label>Description</label>
+    <div class="input">
+    <textarea name="Description" class="editor" rows="20" style="width: 100%">@Model.Description</textarea>
+    </div></div>
+    <div class="clearfix"><label>Confirmation Email</label>
+    <div class="input">
+    <textarea name="BookingConfirmation" rows="8" style="width: 100%">@Model.BookingConfirmation</textarea>
+    </div></div>
+    
+    <div class="clearfix"><label>Tickets</label>
+        <div class="input">
+        @if (Model.Tickets.Count > 0)
+        {
+            <table>
+            <thead>
+            <tr>
+            <th>Price</th>
+            <th>Name</th>
+            <th>Allocation</th>
+            <th>Sold</th>
+            <th>Enabled</th>
+            <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var itm in Model.Tickets)
+            {
+                <tr>
+                    <td>@itm.Price.ToCurrencyString()</td>
+                    <td>@itm.Name</td>
+                    <td>@itm.Allocation</td>
+                    <td>@itm.Sold</td>
+                    <td>@itm.Enabled</td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", "Tickets", new { itm.ID }, null) |
+                        @Html.ActionLink("Remove", "RemoveTicket", "Events", new { EventID = Model.ID, TicketID = itm.ID }, null) |
+                        @Html.ActionLink("Disable", "Disable", "Tickets", new { itm.ID }, null)
+                    
+                    </td>
+                </tr>
+            }
+            </tbody>
+            </table>
+        }
+       @Html.ActionLink("Create Ticket", "New", "Tickets", new { EventSlug = Model.Slug }, new { @class = "btn" })
+        </div>
+    </div>
+    <div class="clearfix"><label>Galleries</label>
+      <div class="input">
+        <ul class="inputs-list eventArtists">
+        @foreach (var artist in ViewBag.Artists as IList<Artist>)
+        {
+            <li><label><input type="checkbox" value="@artist.ID" @if (Model.Lineup.Contains(artist))
+                                                                 {@Html.Raw("checked='checked'")} name="artist_@(artist.ID)"/><span>@artist.Name</span></label></li>
+        }
+        </ul>
+      </div>
+    </div>
+    
+    <div class="clearfix"><label>Galleries</label>
+        <div class="input">
+        @if (Model.Galleries.Count > 0)
+        {
+            <ol class="inputs-list">
+                @foreach (var itm in Model.Galleries)
+                {
+                    <li>@itm.Name [ 
+                        @Html.ActionLink("Edit", "Edit", "Galleries", new { itm.ID }, null) | 
+                        @Html.ActionLink("Remove", "RemoveGallery", "Events", new { GalleryID = itm.ID, EventID = Model.ID }, null) ]
+                    </li>
+                }
+            </ol>
+        }
+        else
+        {
+            <p><span class="label">No galleries assigned</span></p>
+        }
+        <span class="help-block">Assign a gallery to this event via the gallery edit screen</span>
+        </div>
+    </div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save changes">
+        @Html.ActionLink("Back", "Index", "Events", null, new { @class = "btn" })
+          
+    </div>
+}
+
+

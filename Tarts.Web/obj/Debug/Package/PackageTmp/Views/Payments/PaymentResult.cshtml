@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Content
+@using Tarts.Web.Models.Payments
+@model PaymentResultViewModel
+
+<h1>Payment Result - @Model.Reference</h1>
+
+@if (Model.Success)
+{
+    <p>@Model.Message</p>
+}
+else
+{
+    <p>@Model.Message</p>
+    <p>@Model.Details</p>
+}
+

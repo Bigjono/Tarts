@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Content
+@using System;
+@model Gallery
+<h2> @Model.Name <span class="subheading"> - @Model.Date.ToString("MMM yyyy")</span></h2>
+
+
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        $('.fbGallery li').fbGallery();
+	    });
+		</script>
+		
+		<ul class="fbGallery">
+        @foreach (var img in Model.Photos)
+        {
+			<li><a href="@img.Large.Insert(0, "~").ToFullSitePath()" rel="@img.Large.Insert(0,"~").ToFullSitePath()">@Assets.Thumbnail(img, img.ID.ToString())</a></li>
+            }
+		</ul>
+		
+        <div class="clear"></div>

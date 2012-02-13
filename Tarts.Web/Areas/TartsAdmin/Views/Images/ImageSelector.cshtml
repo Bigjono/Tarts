@@ -1,0 +1,26 @@
+﻿@using Tarts.Assets
+@model IList<Image>
+@{
+    Layout = "../Shared/_Empty.cshtml"; 
+}
+
+<a class="showpopup btn" rel="#imageSelector">Select Image</a>
+<div class="popupcontainer" id="imageSelector">
+<ul class="media-grid">
+    @foreach (var img in Model)
+    {
+        <li><a class="selectImage" rel="@img.ID" href="@img.Thumb">@Assets.Thumbnail(img, img.ID.ToString(), 75)</a></li>
+    }
+</ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        EditorCustomFeatures.AttachImageButtons();
+        $(".selectImage").click(function () {
+            $("#SelectedImageID").val($(this).attr("rel"));
+            $("#SelectedImageDisplay").attr("src", $(this).attr("href"));
+            Admin.ClosePopup();
+            return false;
+        });
+    });
+</script>

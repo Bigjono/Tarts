@@ -1,0 +1,69 @@
+﻿@*<div id="banner300">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+    new TWTR.Widget({
+        version: 2,
+        type: 'search',
+        search: 'festival',
+        interval: 6000,
+        title: 'Apple Tarts',
+        subject: 'Apple Tarts',
+        width: 280,
+        height: 160,
+        theme: {
+            shell: {
+                background: '#ccc',
+                color: '#444'
+            },
+            tweets: {
+                background: '#ffffff',
+                color: '#444444',
+                links: '#1985b5'
+            }
+        },
+        features: {
+            scrollbar: true,
+            loop: true,
+            live: true,
+            hashtags: true,
+            timestamp: false,
+            avatars: true,
+            toptweets: false,
+            behavior: 'default'
+        }
+    }).render().start();
+</script>
+         
+<span id="banner_right_top"></span>
+<span id="banner_right_top_alt"></span>
+</div>
+*@
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+    new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 10,
+        interval: 30000,
+        width: 280,
+        height: 250,
+        theme: {
+            shell: {
+                background: '#6eb6cc',
+                color: '#f7f0ef'
+            },
+            tweets: {
+                background: '#f7fac8',
+                color: '#09b824',
+                links: '#f25c41'
+            }
+        },
+        features: {
+            scrollbar: false,
+            loop: true,
+            live: true,
+            behavior: 'default'
+        }
+    }).render().setUser('TweetingTarts').start();
+</script>

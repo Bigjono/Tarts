@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Users";
+    Layout = "../Shared/_Layout.cshtml";
+}
+@using Tarts.Admin
+@using Tarts.Web.Infrastructure.Helpers
+@model IList<User>
+<h2>Tarts Admin Users</h2>
+
+
+<table class="bordered-table zebra-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Gravatar</th>
+<th>Name</th>
+<th>Email</th>
+<th>Enabled</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+
+@foreach (var itm in Model)
+{
+    <tr>
+        <td>@itm.ID</td>
+        <td style="width:40px; text-align:center;">@Html.Gravatar(itm.Email,30)</td>
+        <td>@itm.FirstName @itm.Surname</td>
+        <td><a href="mailto:@itm.Email">@itm.Email</a></td>
+        <td>@itm.Enabled</td>
+        <td>
+            @Html.ActionLink("edit", "Edit", "Users", new { itm.ID }, new { @class = "btn primary" })
+            @Html.ActionLink("delete", "Destroy", "Users", new { itm.ID }, new { @class = "btn " })
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+<div class="well">
+@Html.ActionLink("Add New User", "New", "Users", null, new { @class = "btn primary large" })
+</div>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarts", "Tarts\Tarts.csproj", "{AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarts.Web", "Tarts.Web\Tarts.Web.csproj", "{2AD4FC3E-E61A-4360-8779-572E413109EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD4FC3E-E61A-4360-8779-572E413109EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD4FC3E-E61A-4360-8779-572E413109EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD4FC3E-E61A-4360-8779-572E413109EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD4FC3E-E61A-4360-8779-572E413109EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

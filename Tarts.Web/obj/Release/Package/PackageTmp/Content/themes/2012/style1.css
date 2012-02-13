@@ -1,0 +1,14 @@
+﻿* {margin: 0; padding: 0;}
+html {background: url('images/bg-repeat.png');}
+body { background: #000; background: url('images/topbg2.png') repeat-x;}
+.clear { clear: both;}
+#container { width: 940px;margin: 0px auto;}
+#topnav { width: 100%;height: 57px;background: #000;}
+#header {background: url('images/bg.png') no-repeat;height: 488px;}
+#main { min-height: 500px;background: url('images/bg-repeat.png');background: #fff;
+    -moz-border-radius: 5px;border-radius: 5px;
+        
+        }
+#bottommenu {background: #000;  -moz-border-bottom-left-radius: 5px;border-bottom-left-radius: 5px;-moz-border-bottom-right-radius: 5px;
+             border-bottom-right-radius: 5px;height: 50px;margin-top: 30px;}
+        #inner { padding: 20px;}

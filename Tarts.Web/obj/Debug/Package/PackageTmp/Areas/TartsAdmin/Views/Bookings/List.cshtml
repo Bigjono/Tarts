@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Bookings";
+    Layout = "../Shared/_Layout.cshtml";
+}
+@using Tarts.Bookings
+@using Tarts.Events
+@{
+    var Evt = ViewBag.Event as Event;
+}
+@model IList<Booking>
+<h2>@Evt.Name Bookings</h2>
+
+
+<table class="bordered-table zebra-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Created</th>
+<th>Status</th>
+<th>Reference</th>
+<th>Customer</th>
+<th>Total</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+
+@foreach (var itm in Model)
+{
+    <tr>
+        <td>@itm.ID</td>
+        <td>@itm.Created.ToString("ddd MMM yyyy")</td>
+        <td>@itm.Status.ToString()</td>
+        <td>@itm.Reference</td>
+        <td>@itm.Customer.FirstName @itm.Customer.Surname</td>
+        <td>@itm.Total</td>
+        <td>
+            @Html.ActionLink("edit", "Edit", "Bookings", new { itm.ID }, new { @class = "btn primary" })
+            @Html.ActionLink("delete", "Delete", "Bookings", new { itm.ID }, new { @class = "btn " })
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+
+<div class="well">
+@Html.ActionLink("Back", "Edit", "Events", new { Evt.ID }, new { @class = "btn large" })
+@Html.ActionLink("Create New Event", "New", "Events", null, new { @class = "btn primary large" })
+
+          
+</div>

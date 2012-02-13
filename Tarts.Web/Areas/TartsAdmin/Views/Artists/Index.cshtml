@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Artists";
+    Layout = "../Shared/_Layout.cshtml";
+}
+@using Tarts.Events
+@model IList<Artist>
+<h2>Artists</h2>
+
+
+<table class="bordered-table zebra-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+
+@foreach (var itm in Model)
+{
+    <tr>
+        <td>@itm.ID</td>
+        <td>@itm.Name</td>
+        <td>
+            @Html.ActionLink("edit", "Edit", "Artists", new { itm.ID }, new { @class = "btn primary" })
+            @Html.ActionLink("delete", "Destroy", "Artists", new { itm.ID }, new { @class = "btn " })
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+
+<div class="well">
+@Html.ActionLink("Add New Artist", "New", "Artists", null, new { @class = "btn primary large" })
+</div>

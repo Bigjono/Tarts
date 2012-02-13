@@ -1,0 +1,65 @@
+﻿@using Tarts.Admin
+@using Tarts.Web.Infrastructure.Helpers
+@model User
+           
+
+
+
+
+
+@using (@Html.BeginForm("Update", "Users", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <div class="row">
+    <div class="span10">
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="clearfix"><label>First Name</label>
+    <div class="input"><input type="text" name="FirstName" value="@Model.FirstName" /></div></div>
+    <div class="clearfix"><label>Surname</label>
+    <div class="input"><input type="text" name="Surname" value="@Model.Surname" /></div></div>
+    <div class="clearfix"><label>Enabled</label>
+    <div class="input inputs-list"><label>@Html.CheckBoxFor(m => m.Enabled)<span>Yes/No</span></label></div></div>
+    <div class="clearfix"><label>Email</label>
+    <div class="input"><p><a href="mailto:@Model.Email">@Model.Email</a> 
+    <a onclick="$('#ChangeEmail').dialog({ bgiframe: true, modal: true, width: 600, height: 180 });">   (change) </a></p></div></div>
+    <div class="clearfix"><label>Password</label>
+    <div class="input"><p>@Model.Password.Decrypt()
+    <a onclick="$('#ChangePassword').dialog({ bgiframe: true, modal: true, width: 600, height: 180 });">   (change) </a></p></div></div>
+    </div>
+    <div class="span4 offset2">
+       <div class="picture-frame">@Html.Gravatar(Model.Email,150)
+       <br/>
+       <a href="http://en.gravatar.com/" target="_blank" title="Create Gravatar">Create Gravatar</a>
+       </div>
+       
+    </div>
+    </div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save changes">
+        @Html.ActionLink("Back", "Index", "Users", null, new { @class = "btn" })
+    </div>
+    
+}
+
+<div id="ChangeEmail" title="Change Email" style="display:none;">
+   @using (@Html.BeginForm("ChangeEmail", "Users", null, FormMethod.Post, new { @class = "standardform" }))
+   {
+        <input type="hidden" name="ID" value="@Model.ID" />
+        <div class="clearfix"><label>Email</label>
+        <div class="input"><input type="text" name="Email" value="@Model.Email" /></div></div>
+       <div class="actions">
+        <input class="btn primary" type="submit" value="Change Email">
+       </div>
+   }
+</div>
+<div id="ChangePassword" title="Change Password" style="display:none;">
+   @using (@Html.BeginForm("ChangePassword", "Users", null, FormMethod.Post, new { @class = "standardform" }))
+   {
+        <input type="hidden" name="ID" value="@Model.ID" />
+        <div class="clearfix"><label>Password</label>
+        <div class="input"><input type="password" name="Password" value="" /></div></div>
+       <div class="actions">
+        <input class="btn primary" type="submit" value="Change Password">
+       </div>
+   }
+</div>
+

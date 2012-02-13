@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Artist Bio";
+}
+@using Tarts.Events
+@model Artist
+<h1> @Model.Name</h1>
+<p>
+<img src="@Model.Image.Medium" alt="@Model.Name" align="left" style="margin:0px 10px 10px 0px;" />
+@Html.Raw(Model.Bio)
+</p>

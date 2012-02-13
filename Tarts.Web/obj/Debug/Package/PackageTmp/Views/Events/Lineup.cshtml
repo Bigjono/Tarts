@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using Tarts.Events
+@model Event
+<h2>Lineup <span class="subheading"> - @Model.Name</span></h2>
+
+<ul class="eventLineup1 stickNotes">
+@foreach (var artist in Model.Lineup)
+{
+    <li>
+    <a href="/Artists/Bio/@artist.Slug">
+        <h2>@artist.Name</h2>
+        <p>@Html.Raw(artist.Bio.StripHtml().SmartTrim(100))</p>
+        @*<img src="@artist.Image.Thumb" alt="@artist.Name" />*@
+    </a>
+    </li>
+}
+</ul>
+

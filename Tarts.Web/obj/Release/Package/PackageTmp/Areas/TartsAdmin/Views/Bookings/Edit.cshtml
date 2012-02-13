@@ -1,0 +1,56 @@
+﻿@{ ViewBag.Title = "Edit Booking";
+   Layout = "../Shared/_Layout.cshtml"; }
+@using Tarts.Bookings
+@using Tarts.Ecommerce
+@model Booking
+<h2>Edit Booking - @Model.Reference</h2>
+@using (@Html.BeginForm("Update", "Events", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="row">
+        <div class="span8">
+            <div class="clearfix"><label>Status</label>
+            <div class="input"><p>
+                @if (Model.Status == Booking.BookingStatus.Complete){<span class="label success">Complete</span>}
+                @if (Model.Status == Booking.BookingStatus.Cancelled){<span class="label important">Cancelled</span>}
+                @if (Model.Status == Booking.BookingStatus.Reservation){<span class="label notice">Reservation</span>}</p>
+            </div></div>  
+            <div class="clearfix"><label>Date</label>
+            <div class="input"><p>@Model.Created.ToString("dd/MM/yyyy")</p></div></div>
+            <div class="clearfix"><label>Ticket</label>
+            <div class="input"><p>@Model.Quantity x @Model.Ticket.Name - @Model.Event.Name</p></div></div>
+            <div class="clearfix"><label>Price</label>
+            <div class="input"><p>@Model.TicketsTotal.ToCurrency(), Fees @Model.FeesTotal.ToCurrency() = @Model.Total.ToCurrency() </p></div></div>
+            <div class="clearfix"><label>Customer</label>
+            <div class="input"><p>@Model.Customer.FirstName @Model.Customer.Surname - <a href="mailto:@(Model.Customer.Email)">@Model.Customer.Email</a></p></div></div>
+        </div>
+        <div class="span8">
+            <div class="well">
+                <h3>Payments</h3>
+                 <table class="condensed-table">
+                 <tr><th>Date</th><th>Status</th><th>Amount</th><th>Actions</th></tr>
+                    @foreach (var payment in Model.Payments)
+                    {
+                        <tr><td>@payment.Created.ToString("dd/MM/yyyy")</td><td>@payment.Status.ToString()</td>
+                        <td>@payment.Amount.ToCurrencyString()</td>
+                        <td>@if (payment.Status == Payment.PaymentStatus.Complete)
+                            {  @Html.ActionLink("Mark as Paid", "MarkPaymentAsComplete", "Bookings", new { paymentid = payment.ID }, new { @class = "" }) }</td>
+                        </tr>
+                            if (payment.Status != Payment.PaymentStatus.Complete)
+                            {
+                            <tr><td colspan="3">@payment.Details</td></tr>
+                            }
+                    }
+                </table>
+               <p>Total Paid: @Model.TotalPaid.ToCurrency()</p>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        @Html.ActionLink("Back", "List", "Bookings", new { id = Model.Event.ID }, new { @class = "btn" })
+       @* @if(Model.Status == Booking.BookingStatus.Complete)
+        {*@
+            @Html.ActionLink("ReSend Confirmation Email", "SendConfirmation", "Bookings", new { id = Model.ID }, new { @class = "btn" })
+        @*}*@
+    </div>
+}

@@ -1,0 +1,21 @@
+﻿@using Tarts.Web.Areas.TartsAdmin.Models.Events
+@model NewEventPostModel
+@{ ViewBag.Title = "New Event";
+   Layout = "../Shared/_Layout.cshtml"; }
+
+<h2>New Event</h2>
+@using (@Html.BeginForm("Create", "Events", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <div class="clearfix"><label>Name</label>
+    <div class="input"><input type="text" name="Name" value="@Model.Name" /></div></div>
+    <div class="clearfix"><label>Slug</label>
+    <div class="input"><input type="text" name="Slug" value="@Model.Slug" /></div></div>
+    <div class="clearfix"><label>Start Time</label>
+    <div class="input"><input type="text" name="StartTime" class="datepicker" value="@Model.StartTime.ToString("dd/MM/yyyy")" /></div></div>
+    <div class="clearfix"><label>End Time</label>
+    <div class="input"><input type="text" name="EndTime" class="datepicker" value="@Model.EndTime.ToString("dd/MM/yyyy")" /></div></div>
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Create Event">
+        @Html.ActionLink("Back", "Index", "Events", null, new { @class = "btn" })  
+    </div>
+}

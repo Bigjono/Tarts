@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Events";
+    Layout = "../Shared/_Layout.cshtml";
+}
+@using Tarts.Events
+@model IList<Event>
+<h2>Tarts Events</h2>
+
+
+<table class="bordered-table zebra-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>When</th>
+<th>Allocation</th>
+<th>Sold</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+
+@foreach (var itm in Model)
+{
+    <tr>
+        <td>@itm.ID</td>
+        <td>@itm.Name</td>
+        <td>@itm.StartTime.ToString("ddd MMM yyyy")</td>
+        <td>@itm.TotalAllocation</td>
+        <td>@itm.TotalSold</td>
+        <td>@itm.Status</td>
+        <td>
+            @Html.ActionLink("edit", "Edit", "Events", new { itm.ID }, new { @class = "btn primary" })
+            @Html.ActionLink("delete", "Destroy", "Events", new { itm.ID }, new { @class = "btn " })
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+
+<div class="well">
+@Html.ActionLink("Create New Event", "New", "Events", null, new { @class = "btn primary large" })
+</div>

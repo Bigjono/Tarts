@@ -1,0 +1,68 @@
+﻿@using Tarts.Assets
+@model IList<Image>
+@{
+    ViewBag.Title = "Images";
+    Layout = "../Shared/_Layout.cshtml"; 
+}
+@section additionalCss {
+    @Assets.CSSFile("jquery.fileupload-ui.css")
+}
+@section additionalScripts {
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    @Assets.JSSLib("jquery.iframe-transport.js")
+    @Assets.JSSLib("jquery.fileupload.js")
+    @Assets.JSSLib("jquery.fileupload-ui.js")
+    @Assets.JSS("pg_admin_images.js")
+}
+
+<h2>Tarts Images</h2>
+
+<div class="row">
+<div class="span7">
+
+    @using (@Html.BeginForm("Update", "Images", null, FormMethod.Post, new { @class = "standardform" }))
+    {
+        <div id="imageDetails">
+            <h3>Select an image to edit</h3>
+        </div>
+        <div class="actions">
+            <input class="btn primary" type="submit" value="Save changes"/>  
+            <a id="deleteImage" href="/TartsAdmin/Images/Destroy" class="btn">Delete</a>
+        </div>
+    }
+
+
+</div>
+<div class="span9">
+
+<ul id="assetImages" class="media-grid">
+    @foreach (var img in Model)
+    {
+        <li>
+            <span class="img select" id="@img.ID" rel="@img.Thumb">   
+                @Assets.Thumbnail(img, img.ID.ToString(), 70)
+                <div class="editImage" style="display:none;">
+                    <span class="media-item">@Assets.MediumImage(img)</span>
+                    <p>Image ID: @img.ID</p>
+                    <input type="hidden" name="ID" value="@img.ID" />
+                    <p>Name: <input type="text" name="Name" value="@img.Name" /></p>
+                    <p>Uploaded: @img.Created.ToString("dd/MM/yyyy")</p>
+                    <p>Thumb: <a href="@img.Thumb" target="_blank">@img.Thumb</a></p>
+                    <p>Medium: <a href="@img.Medium" target="_blank">@img.Medium</a></p>
+                    <p>Large: <a href="@img.Large" target="_blank">@img.Large</a></p>
+                </div>
+            </span>
+        </li>
+    }
+</ul>
+
+
+</div>
+</div>
+
+
+
+
+
+
+@{Html.RenderAction("FileUpload", "Images");}

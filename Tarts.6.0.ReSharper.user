@@ -1,0 +1,1075 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:MakePayment.cshtml" caret="0" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:ReservationSummary.cshtml" caret="196" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_TwitterFeed.cshtml" caret="1147" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Users/f:_Edit.cshtml" caret="1546" fromTop="4" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:List.cshtml" caret="894" fromTop="14" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:ArtistsController.cs" caret="509" fromTop="20" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Content/d:themes/d:2012/f:style.css" caret="2904" fromTop="22" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Infrastructure/d:Utilities/f:Emailer.cs" caret="2460" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Global.asax.cs" caret="3064" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Models/d:Events/f:EventPostModel.cs" caret="397" fromTop="13" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:EventsController.cs" caret="2005" fromTop="9" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Booking.cs" caret="3598" fromTop="20" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3288" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="230" fromTop="2" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Shared/f:_Layout.cshtml" caret="1454" fromTop="8" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Lineup.cshtml" caret="465" fromTop="20" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Artists/f:Bio.cshtml" caret="234" fromTop="10" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2112" fromTop="18" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Persistance/d:Mapping/f:EventMap.cs" caret="1004" fromTop="22" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2175" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3045" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2574" fromTop="5" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:EventsController.cs" caret="0" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Web.Release.config" caret="774" fromTop="17" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="619" fromTop="16" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2553" fromTop="17" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Page/f:ChoosePage.cshtml" caret="123" fromTop="8" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="864" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2906" fromTop="15" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2848" fromTop="17" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="2924" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="230" fromTop="2" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3529" fromTop="14" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3958" fromTop="22" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="421" fromTop="14" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Persistance/d:Mapping/f:EventMap.cs" caret="610" fromTop="20" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Models/d:Events/f:EventPostModel.cs" caret="397" fromTop="13" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="2139" fromTop="14" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="2607" fromTop="24" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:EventsController.cs" caret="1872" fromTop="7" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="1807" fromTop="12" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2013" fromTop="16" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="3136" fromTop="25" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="3883" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="2902" fromTop="15" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="3748" fromTop="16" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="1857" fromTop="7" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="2185" fromTop="12" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2314" fromTop="21" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Persistance/d:Mapping/f:EventMap.cs" caret="990" fromTop="22" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3038" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2574" fromTop="5" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="481" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2907" fromTop="25" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="163" fromTop="5" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="864" fromTop="19" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="prop" priority="671" />
+      <Item value="string" priority="2321" />
+      <Item value="UriHostNameType`0" priority="30" />
+      <Item value="DateTime`0" priority="637" />
+      <Item value="IList" priority="125" />
+      <Item value="Artist`0" priority="126" />
+      <Item value="event" priority="30" />
+      <Item value="Bookings" priority="160" />
+      <Item value="return" priority="1215" />
+      <Item value="TicketAllocation" priority="64" />
+      <Item value="TicketsSold" priority="63" />
+      <Item value="decimal" priority="350" />
+      <Item value="public" priority="1279" />
+      <Item value="enum" priority="31" />
+      <Item value="UIntPtr`0" priority="31" />
+      <Item value="Booking`0" priority="127" />
+      <Item value="Status" priority="187" />
+      <Item value="Reservation" priority="50" />
+      <Item value="Price" priority="161" />
+      <Item value="BookingFee" priority="127" />
+      <Item value="Sex`0" priority="31" />
+      <Item value="int" priority="478" />
+      <Item value="PagesController`0" priority="31" />
+      <Item value="private" priority="191" />
+      <Item value="new" priority="1439" />
+      <Item value="GenericRepo" priority="28" />
+      <Item value="DBHelper`0" priority="63" />
+      <Item value="Content" priority="80" />
+      <Item value="itm" priority="426" />
+      <Item value="Layout" priority="31" />
+      <Item value="void" priority="479" />
+      <Item value="bool" priority="157" />
+      <Item value="Name" priority="223" />
+      <Item value="name" priority="256" />
+      <Item value="date" priority="95" />
+      <Item value="Date" priority="63" />
+      <Item value="if" priority="2313" />
+      <Item value="Result" priority="57" />
+      <Item value="Result`0" priority="31" />
+      <Item value="Success" priority="31" />
+      <Item value="true" priority="383" />
+      <Item value="success" priority="31" />
+      <Item value="Message" priority="31" />
+      <Item value="message" priority="63" />
+      <Item value="false" priority="255" />
+      <Item value="Photos" priority="219" />
+      <Item value="DefaultImage" priority="160" />
+      <Item value="img" priority="621" />
+      <Item value="null" priority="159" />
+      <Item value="model" priority="2426" />
+      <Item value="req" priority="63" />
+      <Item value="FilesStatus" priority="28" />
+      <Item value="RedirectToAction`0" priority="223" />
+      <Item value="TartsAdmin" priority="63" />
+      <Item value="Image`0" priority="159" />
+      <Item value="Large" priority="31" />
+      <Item value="large" priority="31" />
+      <Item value="Medium" priority="31" />
+      <Item value="medium" priority="31" />
+      <Item value="Thumb" priority="31" />
+      <Item value="thumb" priority="95" />
+      <Item value="Created" priority="95" />
+      <Item value="Server" priority="95" />
+      <Item value="ImageBuilder`0" priority="31" />
+      <Item value="Image" priority="89" />
+      <Item value="fileName" priority="31" />
+      <Item value="fileName2" priority="31" />
+      <Item value="Repo" priority="1055" />
+      <Item value="ImageHelper`0" priority="127" />
+      <Item value="System" priority="95" />
+      <Item value="Web" priority="80" />
+      <Item value="HttpServerUtilityBase`0" priority="26" />
+      <Item value="HttpServerUtilityWrapper" priority="28" />
+      <Item value="HttpServerUtility`0" priority="26" />
+      <Item value="file" priority="95" />
+      <Item value="largeFilePath" priority="31" />
+      <Item value="f" priority="63" />
+      <Item value="med" priority="31" />
+      <Item value="ImageHelper" priority="124" />
+      <Item value="imageHelper" priority="127" />
+      <Item value="mediumSettings" priority="31" />
+      <Item value="thumbSettings" priority="31" />
+      <Item value="static" priority="63" />
+      <Item value="physicalPath" priority="31" />
+      <Item value="relative" priority="31" />
+      <Item value="try" priority="63" />
+      <Item value="catch" priority="31" />
+      <Item value="IO" priority="26" />
+      <Item value="File`0" priority="26" />
+      <Item value="server" priority="31" />
+      <Item value="Gallery`0" priority="63" />
+      <Item value="obj" priority="479" />
+      <Item value="Galleries" priority="32" />
+      <Item value="virtual" priority="415" />
+      <Item value="Model" priority="1801" />
+      <Item value="DefaultableList&lt;Image&gt;" priority="28" />
+      <Item value="Request" priority="190" />
+      <Item value="ctx" priority="31" />
+      <Item value="Convert`0" priority="26" />
+      <Item value="var" priority="927" />
+      <Item value="galleryID" priority="31" />
+      <Item value="gallery" priority="159" />
+      <Item value="foreach" priority="245" />
+      <Item value="in" priority="95" />
+      <Item value="helper" priority="29" />
+      <Item value="width" priority="93" />
+      <Item value="else" priority="319" />
+      <Item value="IDReferencePropertyAttribute`0" priority="61" />
+      <Item value="div" priority="59" />
+      <Item value="id" priority="29" />
+      <Item value="repo" priority="127" />
+      <Item value="MarshalByRefObject`0" priority="31" />
+      <Item value="ViewBag" priority="635" />
+      <Item value="Index" priority="32" />
+      <Item value="TempData" priority="223" />
+      <Item value="Controller`0" priority="32" />
+      <Item value="TempDataDictionary`0" priority="31" />
+      <Item value="ctrl" priority="95" />
+      <Item value="CrossAppDomainDelegate`0" priority="31" />
+      <Item value="PageController`0" priority="31" />
+      <Item value="slug" priority="95" />
+      <Item value="Html" priority="179" />
+      <Item value="View`0" priority="159" />
+      <Item value="ViewResult`0" priority="31" />
+      <Item value="GalleryController`0" priority="31" />
+      <Item value="Gallery" priority="57" />
+      <Item value="Bio" priority="31" />
+      <Item value="bio" priority="31" />
+      <Item value="photo" priority="63" />
+      <Item value="RemovePhoto" priority="32" />
+      <Item value="Slug" priority="63" />
+      <Item value="User`0" priority="63" />
+      <Item value="FirstName" priority="159" />
+      <Item value="firstname" priority="63" />
+      <Item value="Surname" priority="159" />
+      <Item value="surname" priority="95" />
+      <Item value="Email" priority="255" />
+      <Item value="email" priority="191" />
+      <Item value="Password" priority="192" />
+      <Item value="password" priority="63" />
+      <Item value="Enabled" priority="159" />
+      <Item value="IAsyncResult`0" priority="31" />
+      <Item value="ReturnValue" priority="318" />
+      <Item value="user" priority="192" />
+      <Item value="NewUserPostModel`0" priority="31" />
+      <Item value="usr" priority="159" />
+      <Item value="ReturnValue`0" priority="63" />
+      <Item value="NewUserPostModel" priority="28" />
+      <Item value="ChangeEmailPostModel`0" priority="31" />
+      <Item value="retVal" priority="160" />
+      <Item value="md5" priority="31" />
+      <Item value="Bronson" priority="31" />
+      <Item value="Utils" priority="26" />
+      <Item value="Encryption`0" priority="26" />
+      <Item value="m" priority="31" />
+      <Item value="x" priority="190" />
+      <Item value="ChangeEmail" priority="32" />
+      <Item value="Event`0" priority="95" />
+      <Item value="Event" priority="127" />
+      <Item value="takenAt" priority="31" />
+      <Item value="evt" priority="155" />
+      <Item value="throw" priority="31" />
+      <Item value="Exception" priority="28" />
+      <Item value="res" priority="159" />
+      <Item value="NewEventPostModel`0" priority="31" />
+      <Item value="StartTime" priority="63" />
+      <Item value="EndTime" priority="31" />
+      <Item value="Cancelled" priority="48" />
+      <Item value="TotalSold" priority="63" />
+      <Item value="Raw`0" priority="7" />
+      <Item value="Ticket`0" priority="283" />
+      <Item value="allocation" priority="160" />
+      <Item value="Sold" priority="95" />
+      <Item value="price" priority="96" />
+      <Item value="bookingFee" priority="63" />
+      <Item value="Allocation" priority="63" />
+      <Item value="enabled" priority="63" />
+      <Item value="Ticket" priority="413" />
+      <Item value="ticket" priority="415" />
+      <Item value="fieldset" priority="89" />
+      <Item value="ReCalculateTickTotals`0" priority="31" />
+      <Item value="TotalAllocation" priority="31" />
+      <Item value="e" priority="31" />
+      <Item value="Assets`0" priority="29" />
+      <Item value="Thumbnail`0" priority="3" />
+      <Item value="artist" priority="271" />
+      <Item value="IValidator`0" priority="29" />
+      <Item value="FormCollection`0" priority="30" />
+      <Item value="key" priority="63" />
+      <Item value="Lineup" priority="31" />
+      <Item value="Tarts" priority="31" />
+      <Item value="Page`0" priority="26" />
+      <Item value="Customer`0" priority="159" />
+      <Item value="firstName" priority="31" />
+      <Item value="plainPassword" priority="31" />
+      <Item value="Redirect`0" priority="63" />
+      <Item value="Subscribed" priority="31" />
+      <Item value="existing" priority="127" />
+      <Item value="GenericRepo`0" priority="63" />
+      <Item value="using" priority="29" />
+      <Item value="CustomerAccount" priority="32" />
+      <Item value="FormMethod" priority="57" />
+      <Item value="HttpPost" priority="127" />
+      <Item value="ticketID" priority="64" />
+      <Item value="eventName" priority="65" />
+      <Item value="cust" priority="95" />
+      <Item value="Quantity" priority="159" />
+      <Item value="TicketPrice" priority="63" />
+      <Item value="Customer" priority="99" />
+      <Item value="customer" priority="63" />
+      <Item value="Booking" priority="61" />
+      <Item value="booking" priority="928" />
+      <Item value="bookingId" priority="31" />
+      <Item value="EventName" priority="31" />
+      <Item value="TicketID" priority="31" />
+      <Item value="TicketName" priority="31" />
+      <Item value="valid" priority="95" />
+      <Item value="postModel" priority="127" />
+      <Item value="Reference" priority="95" />
+      <Item value="GenerateUniqueReference`0" priority="31" />
+      <Item value="qty" priority="31" />
+      <Item value="UrlParameter`0" priority="31" />
+      <Item value="filterContext" priority="31" />
+      <Item value="usrCookie" priority="31" />
+      <Item value="cookie" priority="127" />
+      <Item value="Response" priority="31" />
+      <Item value="HttpCookie" priority="25" />
+      <Item value="Guid`0" priority="61" />
+      <Item value="MakePayment" priority="32" />
+      <Item value="HttpGet" priority="26" />
+      <Item value="SettingsController`0" priority="30" />
+      <Item value="Settings" priority="93" />
+      <Item value="analyticsTrackingCode" priority="31" />
+      <Item value="SmtpHost" priority="31" />
+      <Item value="smtpHost" priority="31" />
+      <Item value="smtpUsername" priority="63" />
+      <Item value="SmtpPassword" priority="31" />
+      <Item value="smtpPassword" priority="31" />
+      <Item value="ForceEmailsTo" priority="31" />
+      <Item value="forceEmailsTo" priority="31" />
+      <Item value="EmailFromName" priority="31" />
+      <Item value="emailFromName" priority="31" />
+      <Item value="EmailFromAddress" priority="31" />
+      <Item value="emailFromAddress" priority="31" />
+      <Item value="PayPalUrl" priority="31" />
+      <Item value="payPayUrl" priority="31" />
+      <Item value="PayPalUsername" priority="31" />
+      <Item value="paypalUsername" priority="31" />
+      <Item value="PaypalPDTToken" priority="31" />
+      <Item value="FieldAccessException`0" priority="29" />
+      <Item value="AnalyticsTrackingCode" priority="31" />
+      <Item value="PaymentSettings" priority="32" />
+      <Item value="as" priority="63" />
+      <Item value="cfg" priority="95" />
+      <Item value="Payment`0" priority="127" />
+      <Item value="Amount" priority="31" />
+      <Item value="amount" priority="31" />
+      <Item value="reference" priority="31" />
+      <Item value="NotSet" priority="16" />
+      <Item value="Payment" priority="186" />
+      <Item value="Total" priority="95" />
+      <Item value="Complete" priority="162" />
+      <Item value="Payments" priority="63" />
+      <Item value="List&lt;Payment&gt;" priority="28" />
+      <Item value="p" priority="31" />
+      <Item value="canMakePayment" priority="63" />
+      <Item value="payment" priority="949" />
+      <Item value="paymentID" priority="63" />
+      <Item value="PaymentResultViewModel" priority="28" />
+      <Item value="view" priority="127" />
+      <Item value="Failed" priority="16" />
+      <Item value="parser" priority="191" />
+      <Item value="TotalPaid" priority="64" />
+      <Item value="RedirectToRoute`0" priority="31" />
+      <Item value="EnvironmentVariableTarget`0" priority="29" />
+      <Item value="EventHandler" priority="32" />
+      <Item value="Evt" priority="29" />
+      <Item value="this" priority="31" />
+      <Item value="sold" priority="31" />
+      <Item value="table" priority="29" />
+      <Item value="SelectExtensions`0" priority="31" />
+      <Item value="ViewStartPage`0" priority="31" />
+      <Item value="strResponse" priority="95" />
+      <Item value="StringBuilder" priority="28" />
+      <Item value="sb" priority="31" />
+      <Item value="details" priority="31" />
+      <Item value="PayPalPDTParser`0" priority="31" />
+      <Item value="SystemSettings" priority="31" />
+      <Item value="BookingStatus" priority="26" />
+      <Item value="settings" priority="31" />
+      <Item value="sent" priority="63" />
+      <Item value="bookingConfirmation" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Content.Page">
+      <Item value="Name" priority="80" />
+      <Item value="Content" priority="107" />
+      <Item value="ID" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Persistance.DBHelper">
+      <Item value="NHHibernateSessionFactory" priority="26" />
+      <Item value="NHibernateSessionFactory" priority="26" />
+      <Item value="BronsonDBManager" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
+      <Item value="GetCurrentSession`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Persistance.GenericRepo">
+      <Item value="GetAll`1" priority="134" />
+      <Item value="Save`1" priority="378" />
+      <Item value="Delete`1" priority="53" />
+      <Item value="GetById`1" priority="404" />
+      <Item value="GetByFieldName`1" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="RazorTransitionCompletionContext">
+      <Item value="itm" priority="73" />
+      <Item value="model" priority="41" />
+      <Item value="Model" priority="349" />
+      <Item value="foreach" priority="41" />
+      <Item value="img" priority="77" />
+      <Item value="helper" priority="9" />
+      <Item value="width" priority="7" />
+      <Item value="IDReferencePropertyAttribute`0" priority="9" />
+      <Item value="if" priority="89" />
+      <Item value="id" priority="9" />
+      <Item value="ViewBag" priority="15" />
+      <Item value="Html" priority="55" />
+      <Item value="evt" priority="17" />
+      <Item value="DateTime`0" priority="9" />
+      <Item value="Assets`0" priority="9" />
+      <Item value="artist" priority="61" />
+      <Item value="using" priority="9" />
+      <Item value="Guid`0" priority="9" />
+      <Item value="EnvironmentVariableTarget`0" priority="9" />
+      <Item value="Evt" priority="7" />
+      <Item value="payment" priority="41" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Pages.PagePostModel">
+      <Item value="Name" priority="26" />
+      <Item value="Content" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Year" priority="49" />
+      <Item value="ToString`0" priority="242" />
+      <Item value="AddDays`0" priority="134" />
+      <Item value="AddMonths`0" priority="26" />
+      <Item value="ToStartOfDay`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrWhiteSpace`0" priority="107" />
+      <Item value="Empty" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Contains`0" priority="54" />
+      <Item value="Add`0" priority="54" />
+      <Item value="Remove`0" priority="26" />
+      <Item value="Count" priority="83" />
+      <Item value="Clear`0" priority="26" />
+      <Item value="Where`1" priority="82" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Assets.Image">
+      <Item value="Created" priority="53" />
+      <Item value="Large" priority="135" />
+      <Item value="Medium" priority="189" />
+      <Item value="Thumb" priority="247" />
+      <Item value="Name" priority="82" />
+      <Item value="ID" priority="163" />
+    </ItemStatistics>
+    <ItemStatistics item="CssCodeCompletionContext">
+      <Item value="form" priority="5" />
+      <Item value="margin-bottom" priority="23" />
+      <Item value="ul" priority="17" />
+      <Item value="galleryItems" priority="4" />
+      <Item value="li" priority="29" />
+      <Item value="display" priority="42" />
+      <Item value="inline" priority="5" />
+      <Item value="list-style" priority="11" />
+      <Item value="margin" priority="71" />
+      <Item value="padding" priority="71" />
+      <Item value="h1" priority="11" />
+      <Item value="a" priority="29" />
+      <Item value="h2" priority="11" />
+      <Item value="h3" priority="11" />
+      <Item value="font-size" priority="23" />
+      <Item value="font-weight" priority="11" />
+      <Item value="normal" priority="5" />
+      <Item value="cursor" priority="11" />
+      <Item value="pointer" priority="5" />
+      <Item value="img" priority="23" />
+      <Item value="assetImages" priority="4" />
+      <Item value="height" priority="35" />
+      <Item value="scrollbar-3dlight-color" priority="5" />
+      <Item value="overflow-y" priority="17" />
+      <Item value="scroll" priority="11" />
+      <Item value="editImage" priority="4" />
+      <Item value="imageDetails" priority="4" />
+      <Item value="overflow" priority="23" />
+      <Item value="hidden" priority="17" />
+      <Item value="block" priority="12" />
+      <Item value="width" priority="41" />
+      <Item value="float" priority="24" />
+      <Item value="text-align" priority="42" />
+      <Item value="right" priority="11" />
+      <Item value="clearfix" priority="4" />
+      <Item value="clear" priority="33" />
+      <Item value="bold" priority="5" />
+      <Item value="margin-right" priority="6" />
+      <Item value="body" priority="11" />
+      <Item value="background" priority="59" />
+      <Item value="fb-root-container" priority="4" />
+      <Item value="topnav" priority="4" />
+      <Item value="header" priority="9" />
+      <Item value="main" priority="9" />
+      <Item value="min-height" priority="5" />
+      <Item value="inner" priority="4" />
+      <Item value="margin-top" priority="17" />
+      <Item value="center" priority="18" />
+      <Item value="standardform" priority="4" />
+      <Item value="p" priority="11" />
+      <Item value="padding-top" priority="17" />
+      <Item value="container" priority="4" />
+      <Item value="html" priority="11" />
+      <Item value="repeat-x" priority="6" />
+      <Item value="tartsSlider" priority="4" />
+      <Item value="footer" priority="5" />
+      <Item value="color" priority="47" />
+      <Item value="border" priority="11" />
+      <Item value="fbGallery" priority="9" />
+      <Item value="eventArtists" priority="4" />
+      <Item value="eventLineup" priority="4" />
+      <Item value="both" priority="5" />
+      <Item value="social" priority="4" />
+      <Item value="position" priority="5" />
+      <Item value="absolute" priority="5" />
+      <Item value="bottom" priority="5" />
+      <Item value="border-top" priority="5" />
+      <Item value="dotted" priority="5" />
+      <Item value="left" priority="5" />
+      <Item value="z-index" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="IsActive" priority="26" />
+      <Item value="Commit`0" priority="26" />
+      <Item value="Rollback`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="270" />
+      <Item value="UtcNow" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Aggregate`1" priority="26" />
+      <Item value="Replace`0" priority="245" />
+      <Item value="StartsWith`0" priority="27" />
+      <Item value="ValidateEmail`0" priority="107" />
+      <Item value="ValidatePassword`0" priority="80" />
+      <Item value="Encrypt`0" priority="137" />
+      <Item value="Decrypt`0" priority="243" />
+      <Item value="Hash`0" priority="26" />
+      <Item value="Trim`0" priority="26" />
+      <Item value="ToLower`0" priority="53" />
+      <Item value="FormatString`0" priority="107" />
+      <Item value="ConvertToInt32`0" priority="54" />
+      <Item value="SmartTrim`0" priority="54" />
+      <Item value="DecryptInteger`0" priority="53" />
+      <Item value="ToFullSitePath`0" priority="80" />
+      <Item value="StripHtml`0" priority="27" />
+      <Item value="ProcessVelocityTemplate`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpPostedFileBase">
+      <Item value="FileName" priority="53" />
+      <Item value="ContentLength" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpPostedFile">
+      <Item value="FileName" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Infrastructure.Helpers.ImageHelper">
+      <Item value="SaveImage`0" priority="26" />
+      <Item value="Delete`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtilityBase">
+      <Item value="MapPath`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ImageResizer.Util.PathUtils">
+      <Item value="AppVirtualPath" priority="26" />
+      <Item value="RemoveExtension`0" priority="53" />
+      <Item value="ResolveAppRelative`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Content.Gallery">
+      <Item value="Date" priority="107" />
+      <Item value="Photos" priority="80" />
+      <Item value="DefaultImage" priority="135" />
+      <Item value="Update`0" priority="26" />
+      <Item value="SetDefaultImage`0" priority="26" />
+      <Item value="DefaultImageID" priority="82" />
+      <Item value="AddPhoto`0" priority="26" />
+      <Item value="ID" priority="80" />
+      <Item value="RemovePhoto`0" priority="26" />
+      <Item value="Slug" priority="54" />
+      <Item value="Event" priority="53" />
+      <Item value="Name" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CollectionCascadeExpression`1">
+      <Item value="SaveUpdate`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Galleries.GalleryPostModel">
+      <Item value="Date" priority="53" />
+      <Item value="DefaultImageID" priority="26" />
+      <Item value="Name" priority="26" />
+      <Item value="Slug" priority="26" />
+      <Item value="EventID" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="HtmlCodeCompletionContext">
+      <Item value="class" priority="201" />
+      <Item value="ui-datepicker" priority="5" />
+      <Item value="ul" priority="23" />
+      <Item value="h3" priority="29" />
+      <Item value="li" priority="33" />
+      <Item value="width" priority="48" />
+      <Item value="input" priority="53" />
+      <Item value="id" priority="126" />
+      <Item value="value" priority="65" />
+      <Item value="Content" priority="35" />
+      <Item value="type" priority="54" />
+      <Item value="hidden" priority="35" />
+      <Item value="a" priority="104" />
+      <Item value="rel" priority="11" />
+      <Item value="div" priority="196" />
+      <Item value="strong" priority="5" />
+      <Item value="media-item" priority="5" />
+      <Item value="tbody" priority="11" />
+      <Item value="table" priority="31" />
+      <Item value="td" priority="54" />
+      <Item value="DefaultImageID" priority="5" />
+      <Item value="style" priority="56" />
+      <Item value="display" priority="6" />
+      <Item value="form" priority="24" />
+      <Item value="p" priority="136" />
+      <Item value="span" priority="17" />
+      <Item value="href" priority="83" />
+      <Item value="target" priority="18" />
+      <Item value="textarea" priority="11" />
+      <Item value="name" priority="41" />
+      <Item value="rows" priority="17" />
+      <Item value="cols" priority="5" />
+      <Item value="script" priority="5" />
+      <Item value="text/javascript" priority="5" />
+      <Item value="clearfix" priority="5" />
+      <Item value="label" priority="12" />
+      <Item value="thumbnail" priority="5" />
+      <Item value="checked" priority="11" />
+      <Item value="container" priority="11" />
+      <Item value="imgSelector" priority="5" />
+      <Item value="." priority="5" />
+      <Item value="br" priority="44" />
+      <Item value="b" priority="6" />
+      <Item value="onclick" priority="5" />
+      <Item value="option" priority="12" />
+      <Item value="tr" priority="24" />
+      <Item value="fieldset" priority="36" />
+      <Item value="input-small" priority="5" />
+      <Item value="disabled" priority="6" />
+      <Item value="img" priority="5" />
+      <Item value="src" priority="11" />
+      <Item value=".." priority="29" />
+      <Item value="themes" priority="11" />
+      <Item value="2012" priority="11" />
+      <Item value="Images" priority="11" />
+      <Item value="title" priority="42" />
+      <Item value="h1" priority="18" />
+      <Item value="IValidator`0" priority="9" />
+      <Item value="artist" priority="6" />
+      <Item value="clear" priority="5" />
+      <Item value="float" priority="6" />
+      <Item value="header" priority="5" />
+      <Item value="offset9" priority="5" />
+      <Item value="legend" priority="11" />
+      <Item value="submit" priority="5" />
+      <Item value="action" priority="5" />
+      <Item value="method" priority="6" />
+      <Item value="POST" priority="5" />
+      <Item value="FieldAccessException`0" priority="7" />
+      <Item value="xlarge" priority="5" />
+      <Item value="input-xxlarge" priority="6" />
+      <Item value="colspan" priority="12" />
+      <Item value="th" priority="23" />
+      <Item value="text-align" priority="6" />
+      <Item value="margin-right" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="QueryString" priority="53" />
+      <Item value="Indexer" priority="26" />
+      <Item value="Form" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="function" priority="32" />
+      <Item value="var" priority="32" />
+      <Item value="$" priority="69" />
+      <Item value="alert" priority="131" />
+      <Item value="screen" priority="10" />
+      <Item value="if" priority="21" />
+      <Item value="size" priority="10" />
+      <Item value="undefined" priority="21" />
+      <Item value="Admin" priority="32" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="26" />
+      <Item value="EncryptInteger`0" priority="190" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="Equals`0" priority="26" />
+      <Item value="ID" priority="27" />
+      <Item value="ErrorMessage" priority="53" />
+      <Item value="Customer" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ASP.Assets">
+      <Item value="MediumImage`0" priority="55" />
+      <Item value="Thumbnail`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContextQualified">
+      <Item value="find" priority="19" />
+      <Item value="html" priority="8" />
+      <Item value="attr" priority="19" />
+      <Item value="get" priority="9" />
+      <Item value="CenterPopup" priority="8" />
+      <Item value="CurrentPopupID" priority="8" />
+      <Item value="ClosePopup" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.TempDataDictionary">
+      <Item value="Add`0" priority="134" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.Controller">
+      <Item value="TempData" priority="26" />
+      <Item value="ViewBag" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="Raw`0" priority="81" />
+      <Item value="Gravatar`0" priority="26" />
+      <Item value="CheckBoxFor`1" priority="26" />
+      <Item value="DropDownListFor`2" priority="26" />
+      <Item value="ActionLink`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.UrlParameter">
+      <Item value="Optional" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Events.Artist">
+      <Item value="Bio" priority="108" />
+      <Item value="UpdateInfo`0" priority="26" />
+      <Item value="SetImage`0" priority="26" />
+      <Item value="Image" priority="108" />
+      <Item value="Name" priority="80" />
+      <Item value="ID" priority="27" />
+      <Item value="Slug" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Artists.ArtistPostModel">
+      <Item value="Name" priority="26" />
+      <Item value="Bio" priority="26" />
+      <Item value="ImageID" priority="26" />
+      <Item value="Slug" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Galleries.RemovePhotoPostModel">
+      <Item value="GalleryID" priority="53" />
+      <Item value="PhotoID" priority="26" />
+      <Item value="DeletePhoto" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Admin.User">
+      <Item value="FirstName" priority="80" />
+      <Item value="Surname" priority="81" />
+      <Item value="Email" priority="272" />
+      <Item value="Password" priority="107" />
+      <Item value="Enabled" priority="270" />
+      <Item value="Update`0" priority="26" />
+      <Item value="EnabledUser`0" priority="26" />
+      <Item value="DisableUser`0" priority="26" />
+      <Item value="ChangePassword`0" priority="53" />
+      <Item value="IsValid`0" priority="26" />
+      <Item value="Validate`0" priority="26" />
+      <Item value="ID" priority="26" />
+      <Item value="ChangeEmail`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Admin.UserPostModel">
+      <Item value="FirstName" priority="26" />
+      <Item value="Surname" priority="26" />
+      <Item value="Enabled" priority="54" />
+      <Item value="Password" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Admin.NewUserPostModel">
+      <Item value="Email" priority="81" />
+      <Item value="Password" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Bronson.Utils.ReturnValue">
+      <Item value="Succeeded" priority="269" />
+      <Item value="Message" priority="188" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Admin.ChangeEmailPostModel">
+      <Item value="Email" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Admin.ChangePasswordPostModel">
+      <Item value="Password" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Web.Infrastructure.Helpers.HTMLHelpers">
+      <Item value="Gravatar`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Bronson.Utils.Encryption">
+      <Item value="EncodeMD5`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Cryptography.MD5">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Account.LogonModel">
+      <Item value="UserName" priority="26" />
+      <Item value="Password" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Events.Event">
+      <Item value="Description" priority="82" />
+      <Item value="Lineup" priority="107" />
+      <Item value="Galleries" priority="107" />
+      <Item value="Tickets" priority="80" />
+      <Item value="Cancelled" priority="26" />
+      <Item value="CanDelete`0" priority="53" />
+      <Item value="StartTime" priority="80" />
+      <Item value="TotalAllocation" priority="108" />
+      <Item value="TotalSold" priority="107" />
+      <Item value="Update`0" priority="26" />
+      <Item value="RemoveGallery`0" priority="26" />
+      <Item value="AddTicket`0" priority="26" />
+      <Item value="Slug" priority="162" />
+      <Item value="ID" priority="269" />
+      <Item value="Name" priority="161" />
+      <Item value="RemoveTicket`0" priority="26" />
+      <Item value="DisableTicket`0" priority="26" />
+      <Item value="EnableTicket`0" priority="26" />
+      <Item value="RemoveArtists`0" priority="26" />
+      <Item value="AddArtist`0" priority="26" />
+      <Item value="ReCalculateTickTotals`0" priority="26" />
+      <Item value="Bookings" priority="80" />
+      <Item value="BookingConfirmation" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="27" />
+      <Item value="Value" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Bookings.Ticket">
+      <Item value="Enabled" priority="161" />
+      <Item value="Event" priority="622" />
+      <Item value="UpdateTicketInfo`0" priority="53" />
+      <Item value="Price" priority="53" />
+      <Item value="Name" priority="270" />
+      <Item value="Allocation" priority="27" />
+      <Item value="Sold" priority="82" />
+      <Item value="BookingFee" priority="108" />
+      <Item value="Disable`0" priority="53" />
+      <Item value="ID" priority="189" />
+      <Item value="Enable`0" priority="53" />
+      <Item value="Remaining" priority="53" />
+      <Item value="ReCalculateTicketsSold`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.EventPostModel">
+      <Item value="Description" priority="53" />
+      <Item value="Name" priority="26" />
+      <Item value="Slug" priority="26" />
+      <Item value="StartTime" priority="26" />
+      <Item value="EndTime" priority="26" />
+      <Item value="BookingConfirmation" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.NewEventPostModel">
+      <Item value="Name" priority="54" />
+      <Item value="Slug" priority="26" />
+      <Item value="StartTime" priority="26" />
+      <Item value="EndTime" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.RemoveGalleryPostModel">
+      <Item value="EventID" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Decimal">
+      <Item value="ToCurrency`0" priority="296" />
+      <Item value="ToCurrencyString`0" priority="53" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.NewTicketPostModel">
+      <Item value="EventID" priority="26" />
+      <Item value="Name" priority="54" />
+      <Item value="Price" priority="54" />
+      <Item value="EventSlug" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.TicketPostModel">
+      <Item value="Name" priority="26" />
+      <Item value="Price" priority="26" />
+      <Item value="BookingFee" priority="26" />
+      <Item value="Allocation" priority="26" />
+      <Item value="Enabled" priority="26" />
+      <Item value="ID" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Events.RemoveTicketPostModel">
+      <Item value="TicketID" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Bronson.DB.Common.Interface.IDBManager">
+      <Item value="CloseConnection`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.FormCollection">
+      <Item value="KeysCollection`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="Keys" priority="26" />
+      <Item value="AllKeys" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Account.LoginPostModel">
+      <Item value="Email" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Customers.Customer">
+      <Item value="FirstName" priority="136" />
+      <Item value="Surname" priority="134" />
+      <Item value="Email" priority="136" />
+      <Item value="Password" priority="53" />
+      <Item value="Phone" priority="26" />
+      <Item value="Subscribed" priority="26" />
+      <Item value="Gender" priority="26" />
+      <Item value="Validate`0" priority="26" />
+      <Item value="ID" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Account.CreateCustomerPostModel">
+      <Item value="Email" priority="53" />
+      <Item value="FirstName" priority="26" />
+      <Item value="Surname" priority="26" />
+      <Item value="Password" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Bookings.CreateCustomerPostModel">
+      <Item value="ticketID" priority="26" />
+      <Item value="eventName" priority="53" />
+      <Item value="FirstName" priority="26" />
+      <Item value="Surname" priority="53" />
+      <Item value="Email" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Bookings.Booking">
+      <Item value="ID" priority="190" />
+      <Item value="Status" priority="189" />
+      <Item value="Quantity" priority="163" />
+      <Item value="Ticket" priority="296" />
+      <Item value="Reference" priority="136" />
+      <Item value="TicketPrice" priority="53" />
+      <Item value="Total" priority="216" />
+      <Item value="BookingFee" priority="80" />
+      <Item value="Customer" priority="298" />
+      <Item value="Event" priority="188" />
+      <Item value="UpdateQuantity`0" priority="26" />
+      <Item value="CanMakePayment`0" priority="26" />
+      <Item value="AddPayment`0" priority="26" />
+      <Item value="Payments" priority="53" />
+      <Item value="FailPayment`0" priority="26" />
+      <Item value="MarkPaymentAsComplete`0" priority="107" />
+      <Item value="MarkPaymentAsVerfied`0" priority="26" />
+      <Item value="CanDelete`0" priority="26" />
+      <Item value="Created" priority="26" />
+      <Item value="TicketsTotal" priority="26" />
+      <Item value="FeesTotal" priority="26" />
+      <Item value="TotalPaid" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Bookings.Booking">
+      <Item value="BookingStatus`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Bookings.Booking+BookingStatus">
+      <Item value="Reservation" priority="53" />
+      <Item value="Complete" priority="26" />
+      <Item value="Cancelled" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Bookings.Booking+BookingStatus">
+      <Item value="ToString`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Bookings.CreateCustomerViewModel">
+      <Item value="TicketName" priority="26" />
+      <Item value="FirstName" priority="27" />
+      <Item value="Surname" priority="27" />
+      <Item value="Email" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Bookings.AmmendBookingPostModel">
+      <Item value="bookingID" priority="26" />
+      <Item value="Quantity" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpCookie">
+      <Item value="Value" priority="26" />
+      <Item value="HttpOnly" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Bookings.CustomerLoginPostModel">
+      <Item value="ticketID" priority="26" />
+      <Item value="Password" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Cookie">
+      <Item value="Secure" priority="26" />
+      <Item value="Expires" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
+      <Item value="Cookies" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpCookieCollection">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StructureMap.ObjectFactory">
+      <Item value="GetInstance`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Config.Settings">
+      <Item value="PaypalUrl" priority="81" />
+      <Item value="PaypalUsername" priority="81" />
+      <Item value="PaypalPdtToken" priority="54" />
+      <Item value="AnalyticsTrackingCode" priority="27" />
+      <Item value="EmailFromName" priority="54" />
+      <Item value="EmailFromAddress" priority="54" />
+      <Item value="ForceEmailsTo" priority="54" />
+      <Item value="SmtpHost" priority="54" />
+      <Item value="SmtpUsername" priority="54" />
+      <Item value="SmtpPassword" priority="54" />
+      <Item value="UpdateEmailSettings`0" priority="53" />
+      <Item value="UpdateSEOSettings`0" priority="26" />
+      <Item value="UpdatePaymentSettings`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Settings.EmailSettingsPostModel">
+      <Item value="SmtpHost" priority="26" />
+      <Item value="SmtpUsername" priority="26" />
+      <Item value="SmtpPassword" priority="26" />
+      <Item value="EmailFromName" priority="26" />
+      <Item value="EmailFromAddress" priority="26" />
+      <Item value="ForceEmailsTo" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Settings.PaymentSettingsPostModel">
+      <Item value="PaypalUrl" priority="26" />
+      <Item value="PaypalPdtToken" priority="26" />
+      <Item value="PaypalUsername" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Bronson.Utils.WebHelpers">
+      <Item value="FullSiteRoot`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Ecommerce.Payment+PaymentStatus">
+      <Item value="Created" priority="53" />
+      <Item value="Verified" priority="53" />
+      <Item value="Complete" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Ecommerce.Payment">
+      <Item value="Status" priority="134" />
+      <Item value="ID" priority="53" />
+      <Item value="Booking" priority="323" />
+      <Item value="Message" priority="80" />
+      <Item value="Amount" priority="53" />
+      <Item value="Created" priority="53" />
+      <Item value="Details" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Models.Payments.PaymentResultViewModel">
+      <Item value="Message" priority="80" />
+      <Item value="Success" priority="53" />
+      <Item value="Reference" priority="53" />
+      <Item value="Details" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Infrastructure.Helpers.PayPalPDTParser">
+      <Item value="PaymentStatus" priority="26" />
+      <Item value="Amount" priority="80" />
+      <Item value="GrossTotal" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Ecommerce.Payment+PaymentStatus">
+      <Item value="ToEnumDescription`0" priority="26" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Decimal">
+      <Item value="Round`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ConvertToDecimal`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendFormat`0" priority="26" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tarts.Web.Infrastructure.Helpers.PayPalPDTParser">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Tarts.Web.Infrastructure.Utilities.Emailer">
+      <Item value="SendEmail`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

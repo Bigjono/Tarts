@@ -1,0 +1,65 @@
+﻿@{ ViewBag.Title = "Edit Site Settings";
+   Layout = "../Shared/_Layout.cshtml"; }
+@using Tarts.Config   
+@model Settings
+
+<div class="row">
+<div class="span9">
+@using (@Html.BeginForm("PaymentSettings", "Settings", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <legend>Payment Settings</legend>
+    <div class="clearfix"><label>Paypal Url</label>
+    <div class="input"><input type="text" name="PaypalUrl" class="input-xlarge" value="@Model.PaypalUrl" /></div></div>
+    <div class="clearfix"><label>Paypal Username</label>
+    <div class="input"><input type="text" name="PaypalUsername" class="input-xlarge" value="@Model.PaypalUsername" /></div></div>
+    <div class="clearfix"><label>Paypal PDT Token</label>
+    <div class="input"><textarea rows="3" class="input-xlarge" name="PaypalPdtToken">@Model.PaypalPdtToken</textarea></div></div>
+   
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save Payment Settings">
+    </div>
+    </fieldset>
+}
+</div>
+<div class="span7">
+@using (@Html.BeginForm("SEOSettings", "Settings", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <legend>SEO Settings</legend>
+    <div class="clearfix"><label>Analytics Tracking Code</label>
+    <div class="input"><textarea rows="8" name="AnalyticsTrackingCode">@Model.AnalyticsTrackingCode</textarea></div></div>
+   
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save SEO Settings">
+    </div>
+    </fieldset>
+}
+</div>
+</div>
+<div class="row">
+<div class="span8">
+@using (@Html.BeginForm("EmailSettings", "Settings", null, FormMethod.Post, new { @class = "standardform" }))
+{
+    <fieldset>
+    <legend>Email Settings</legend>
+    <div class="clearfix"><label>Email From Name</label>
+    <div class="input"><input type="text" name="EmailFromName" value="@Model.EmailFromName" /></div></div>
+    <div class="clearfix"><label>Email From Address</label>
+    <div class="input"><input type="text" name="EmailFromAddress" value="@Model.EmailFromAddress" /></div></div>
+    <div class="clearfix"><label>Force Emails To</label>
+    <div class="input"><input type="text" name="ForceEmailsTo" value="@Model.ForceEmailsTo" /></div></div>
+    <div class="clearfix"><label>Smtp Host</label>
+    <div class="input"><input type="text" name="SmtpHost" value="@Model.SmtpHost" /></div></div>
+    <div class="clearfix"><label>Smtp Username</label>
+    <div class="input"><input type="text" name="SmtpUsername" value="@Model.SmtpUsername" /></div></div>
+    <div class="clearfix"><label>Smtp Password</label>
+    <div class="input"><input type="text" name="SmtpPassword" value="@Model.SmtpPassword" /></div></div>
+   
+    <div class="actions">
+        <input class="btn primary" type="submit" value="Save Email Settings">
+    </div>
+    </fieldset>
+}
+</div>
+</div>

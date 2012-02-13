@@ -1,0 +1,76 @@
+﻿@using Tarts.Assets
+@using Tarts.Web.Infrastructure.Helpers
+
+﻿@helper CSSFile(string cssFile, string media= "screen")
+{
+    var fileCombine = string.Format("{0}?v={1}", cssFile, @ApplicationHelper.VersionNumber);
+    <link rel="stylesheet" href="/content/@fileCombine" type="text/css" media="@media" /> 
+}
+ 
+@helper JSSLib(string scriptFile) {
+    <script type="text/javascript" src="/Scripts/@scriptFile"></script>
+}
+
+@helper JSS(string scriptFile) {
+    var fileCombine = string.Format("{0}?v={1}", scriptFile, ApplicationHelper.VersionNumber);
+    <script type="text/javascript" src="/content/scripts/@fileCombine"></script>
+}
+
+@helper Img(string imgFile, string altText) {
+    
+    var fileCombine = string.Format("{0}", imgFile);
+    <img src="/assets/images/@fileCombine" alt="@altText" />
+    
+    
+}
+
+@helper Thumbnail(Image img, string id = "", int width = 100) {
+    if(img != null)
+    {
+        string url = img.Thumb.Replace("~", "");
+        if(width == 100){ <img src="@url" class="thumbnail" id="@id" alt="@img.Name"></img>  }
+        else  { <img src="@url" width="@width" id="@id" alt="@img.Name"></img> }
+    }
+    else
+    {
+        <img src="/Content/images/placeholder.gif" class="thumbnail" id="@id" alt="image placeholder"/>
+    }
+    
+}
+ 
+@helper MediumImage(Image img)
+{
+    if (img != null)
+    {
+        string url = img.Medium.Replace("~", "");
+        <img src="@url" alt="@img.Name"></img>
+    }
+    else
+    {
+        <img src="/Content/images/placeholder.gif" alt="image placeholder"></img>
+    }
+        
+    
+}
+ 
+ @helper Image(Image img)
+ {
+         if (img != null)
+         {
+             string url = img.Large.Replace("~", "");
+            <img src="@url" alt="@img.Name"></img>
+         }
+         else
+         {
+            <img src="/Content/images/placeholder.gif" alt="image placeholder"></img>
+         }
+        
+}
+
+﻿@functions{
+    public static string ImgPath(string imgFile)
+    {
+        var fileCombine = string.Format("{0}", imgFile);
+        return String.Format("/assets/img/{0}", fileCombine);
+    }
+}
