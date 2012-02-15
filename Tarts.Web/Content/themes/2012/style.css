@@ -33,6 +33,9 @@ footer li a { color: #FEFEFE;}
 #social { text-align: right;margin-top: -22px;}
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .span13, .span14, .span15, .span16 { overflow: hidden;}
 
+ul.galleries li { display: block;float: left;width: 300px;height: 330px;padding: 5px; text-align: center }
+ul.galleries p { font-weight: bold}
+ul.galleries li img {  box-shadow: 0 1px 3px #AAAAAA; margin: 5px; padding: 4px;}
 
 ul.stickNotes{
   overflow:hidden;

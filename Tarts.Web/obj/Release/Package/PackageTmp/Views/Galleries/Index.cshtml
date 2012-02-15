@@ -1,5 +1,16 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Gallery";
 }
+@using Tarts.Content
+@model IList<Gallery>
+<h2>Tarts Galleries</h2>
 
-<h2>All Galleries</h2>
+<ul class="galleries">
+@foreach (var gal in Model)
+{
+    <li><a href="/galleries/@gal.Slug" title="@gal.Name">
+        <p>@gal.Name</p>
+        <img src="@gal.DefaultImage.Medium?w=280&h=0&crop=auto" />
+    </a></li>
+}
+</ul>

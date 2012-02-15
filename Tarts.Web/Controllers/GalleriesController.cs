@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Tarts.Content;
 using Tarts.Persistance;
 
@@ -17,7 +13,8 @@ namespace Tarts.Web.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            var lst = Repo.GetAll<Gallery>();
+            return View(lst);
         }
 
         public ViewResult View(string id)

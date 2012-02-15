@@ -23,3 +23,5 @@ C:\@Projects\Tarts\Tarts\bin\Release\StructureMap.xml
 C:\@Projects\Tarts\Tarts\obj\Release\ResolveAssemblyReference.cache
 C:\@Projects\Tarts\Tarts\obj\Release\Tarts.dll
 C:\@Projects\Tarts\Tarts\obj\Release\Tarts.pdb
+C:\@Projects\Tarts\Tarts\bin\Release\ImageResizer.dll
+C:\@Projects\Tarts\Tarts\bin\Release\ImageResizer.xml

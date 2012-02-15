@@ -37,7 +37,7 @@
 	
 <div class="header  ">
     <div class="header-left"><a href="/"><img src="/Content/themes/2012/Images/translogo2.png"/></a></div>
-  @*  <div class="header-right"><a href="/buytickets"><img src="/Content/themes/2012/Images/earlybird-tickets.png"/></a></div>*@
+  <div class="header-right"><a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/Buy-Tickets-top.png"/></a></div>
     <div class="clear"></div>
 </div>
 <div class="page">
@@ -53,7 +53,7 @@
             <li><a href="/events/apple-tarts-2012/tickets">Tickets</a></li>
             <li><a href="/Festival-Info" title="Info">Festival Info</a></li>
             <li><a href="/events/apple-tarts-2012/lineup">Lineup</a></li>
-            <li><a href="/galleries/2011">Gallery</a></li>
+            <li><a href="/galleries">Galleries</a></li>
             <li><a href="/contacts" title="Contacts">Contacts</a></li>
             </ul>
         </div>
@@ -62,10 +62,11 @@
     </div>
     </section>
     <div id="tartsSlider">
-        <a href="/galleries/2011"><img src="/Content/themes/2012/Images/2011-gallery-banner.png" alt="banner 1" /></a>
-        <a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/tartsrepublic.jpg" alt="Tickets" /></a>
-        <a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/buytickets.jpg" alt="Tickets" /></a>
-        <a href="/about"><img src="/Content/themes/2012/Images/tarts.jpg" alt="Tarts" /></a>
+        <a href="/about"><img src="/Content/themes/2012/Images/apple-tarts.png" alt="Tarts" /></a>
+        <a href="/galleries"><img src="/Content/themes/2012/Images/2011-gallery-new.png" alt="gallery" /></a>
+        <a href="/Tarts-Republic"><img src="/Content/themes/2012/Images/tarts-republic.png" alt="Tickets" /></a>
+        <a href="/events/apple-tarts-2012/tickets"><img src="/Content/themes/2012/Images/buy-tickets.png" alt="Tickets" /></a>
+        
     </div>
     <div class="row">
         <div class="span11">
@@ -77,10 +78,11 @@
             @RenderBody()
         </div> <!-- end left container -->
         <div class="span5">
+            @Html.Partial("Partials/_Poll")
             <iframe width="280" height="280" src="http://www.youtube.com/embed/T5gfQMtw0-w" frameborder="0" allowfullscreen></iframe><br/><br/>
             @Html.Partial("Partials/_FacebookLike")<br/><br/>
             @Html.Partial("Partials/_TwitterFeed")
-            @Html.Partial("Partials/_Poll")
+            
         </div> <!-- end right container -->
     </div>
 

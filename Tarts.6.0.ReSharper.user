@@ -14,27 +14,25 @@
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:EventsController.cs" caret="2005" fromTop="9" />
       <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Booking.cs" caret="3598" fromTop="20" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3288" fromTop="9" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="230" fromTop="2" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Shared/f:_Layout.cshtml" caret="1454" fromTop="8" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Lineup.cshtml" caret="465" fromTop="20" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Artists/f:Bio.cshtml" caret="234" fromTop="10" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2112" fromTop="18" />
       <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Persistance/d:Mapping/f:EventMap.cs" caret="1004" fromTop="22" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2175" fromTop="0" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3045" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2574" fromTop="5" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:EventsController.cs" caret="0" fromTop="0" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Web.Release.config" caret="774" fromTop="17" />
       <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="619" fromTop="16" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2553" fromTop="17" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Page/f:ChoosePage.cshtml" caret="123" fromTop="8" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2112" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="864" fromTop="19" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2175" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3045" fromTop="18" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Shared/f:_Layout.cshtml" caret="1454" fromTop="8" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Lineup.cshtml" caret="465" fromTop="20" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Artists/f:Bio.cshtml" caret="234" fromTop="10" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="388" fromTop="16" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="228" fromTop="1" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3777" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2906" fromTop="15" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2848" fromTop="17" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="2924" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="230" fromTop="2" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3529" fromTop="14" />
@@ -63,6 +61,8 @@
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="864" fromTop="19" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3791" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3486" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
