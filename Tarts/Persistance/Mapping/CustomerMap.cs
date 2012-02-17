@@ -17,6 +17,7 @@ namespace Tarts.Persistance.Mapping
             Map(x => x.Password);
             Map(x => x.Mobile);
             Map(x => x.Subscribed);
+            Map(x => x.FacebookID);
             
 
            

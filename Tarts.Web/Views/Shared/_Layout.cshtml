@@ -5,6 +5,7 @@
     <title>@ViewBag.Title</title>
     <meta name="description" content="Apple Tarts, a one day/night festival in the countryside. " />
     <meta name="keywords" content="kent festival, festivals, south east festivals, local music, music in caterbury, music in maidstone, suburban tarts, Brogdale Farm, music Faversham" />
+	<link rel="shortcut icon" href="/Content/themes/2012/Images/favicon.ico"/>
     @Assets.CSSFile("themes/2012/bootstrap.css")
     @Assets.CSSFile("themes/2012/style.css")
     @Assets.CSSFile("fbgallery.css")
@@ -34,7 +35,6 @@
 </head>
 
 <body>
-
 @Html.Partial("Partials/_FacebookJs")
 	
 <div class="header  ">
@@ -102,12 +102,13 @@
         <div id="social">
             <a href="https://www.facebook.com/groups/206847262692869/" target="_blank"><image src="/Content/themes/2012/Images/facebook_32.png" title="facebook" /></a>
             <a href="https://twitter.com/#!/TweetingTarts" target="_blank"><image src="/Content/themes/2012/Images/twitter_32.png" title="twitter" /></a>
-@*            <image src="/Content/themes/2012/Images/youtube_32.png" title="facebook" />
-            <image src="/Content/themes/2012/Images/flickr_32.png" title="facebook" />
-            <image src="/Content/themes/2012/Images/myspace_32.png" title="facebook" />
-            <image src="/Content/themes/2012/Images/google_plus_32.png" title="facebook" />*@
+            @*            <image src="/Content/themes/2012/Images/youtube_32.png" title="facebook" />
+        <image src="/Content/themes/2012/Images/flickr_32.png" title="facebook" />
+        <image src="/Content/themes/2012/Images/myspace_32.png" title="facebook" />
+        <image src="/Content/themes/2012/Images/google_plus_32.png" title="facebook" />*@
         </div>
     </div>
 </footer>
+@{ Html.RenderPartial("FacebookInit"); }
 </body>
 </html>

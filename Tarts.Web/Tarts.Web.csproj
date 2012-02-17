@@ -46,6 +46,15 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.5.4.1.0\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web">
+      <HintPath>..\packages\FacebookWeb.5.4.1.0\lib\net40\Facebook.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web.Mvc">
+      <HintPath>..\packages\FacebookWebMvc.5.4.1.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="FluentNHibernate, Version=1.2.0.712, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\FluentNHibernate.1.2.0.712\lib\FluentNHibernate.dll</HintPath>
@@ -147,6 +156,7 @@
     <Compile Include="Controllers\Base\GlobalActionFilter.cs" />
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\FacebookLoginController.cs" />
     <Compile Include="Controllers\GalleriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PageController.cs" />
@@ -215,6 +225,8 @@
     <Content Include="Content\themes\2012\Images\Copy of 404.png" />
     <Content Include="Content\themes\2012\Images\earlybird-tickets.png" />
     <Content Include="Content\themes\2012\Images\facebook_32.png" />
+    <Content Include="Content\themes\2012\Images\fav-logo.png" />
+    <Content Include="Content\themes\2012\Images\favicon.ico" />
     <Content Include="Content\themes\2012\Images\flickr_32.png" />
     <Content Include="Content\themes\2012\Images\footer-repeat.png" />
     <Content Include="Content\themes\2012\Images\gallery-header.png" />
@@ -464,6 +476,9 @@
     <Content Include="Views\Artists\Bio.cshtml" />
     <Content Include="Views\Shared\Partials\_Poll.cshtml" />
     <None Include="Content\themes\2012\Images\tarts republic.psd" />
+    <Content Include="fbchannel.ashx" />
+    <Content Include="Views\Shared\FacebookInit.cshtml" />
+    <Content Include="Views\Facebooklogin\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -487,7 +502,7 @@
           <IISUrl>http://localhost/tarts</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
-          <CustomServerUrl>http://tarts</CustomServerUrl>
+          <CustomServerUrl>http://tarts.co.uk</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

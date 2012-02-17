@@ -64,3 +64,9 @@ C:\@Projects\Personal\Tarts\Tarts.Web\bin\StructureMap.xml
 C:\@Projects\Personal\Tarts\Tarts.Web\obj\Release\ResolveAssemblyReference.cache
 C:\@Projects\Personal\Tarts\Tarts.Web\obj\Release\Tarts.Web.dll
 C:\@Projects\Personal\Tarts\Tarts.Web\obj\Release\Tarts.Web.pdb
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.dll
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.Web.dll
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.Web.Mvc.dll
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.xml
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.Web.xml
+C:\@Projects\Personal\Tarts\Tarts.Web\bin\Facebook.Web.Mvc.xml

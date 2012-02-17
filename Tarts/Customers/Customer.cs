@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Bronson.Utils;
 using Tarts.Base;
 
@@ -16,6 +13,7 @@ namespace Tarts.Customers
             Female = 2
         }
 
+        public virtual string FacebookID { get; set; }
         public virtual string FirstName { get; set; }
         public virtual string Surname { get; set; }
         public virtual string Email { get; set; }

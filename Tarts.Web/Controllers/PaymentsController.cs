@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Web.Mvc;
+using Facebook.Web;
 using Tarts.Config;
 using Tarts.Ecommerce;
 using Tarts.Persistance;
@@ -106,6 +108,22 @@ namespace Tarts.Web.Controllers
                     view.Success = true;
                     view.Message = "Thank you your payment has been verfied. We will email you as soon as it is processed and your booking is confirmed. ";
                     return View(view);
+                }
+
+                try
+                {
+                    if (FacebookWebContext.Current.IsAuthenticated())
+                    {
+                        var client = new FacebookWebClient();
+                        dynamic me = client.Get("me");
+                        var args = new Dictionary<string, object>();
+                        args["message"] = string.Format("Has just bought their ticket for {0} at {1}!", payment.Booking.Event.Name, "http://www.appletartsfestival.co.uk");
+                        client.Post("/me/feed", args);
+                    }
+                }
+                catch 
+                {
+                    
                 }
                 
             }
