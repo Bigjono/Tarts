@@ -1,15 +1,8 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:MakePayment.cshtml" caret="0" fromTop="0" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:ReservationSummary.cshtml" caret="196" fromTop="9" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_TwitterFeed.cshtml" caret="1147" fromTop="18" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Users/f:_Edit.cshtml" caret="1546" fromTop="4" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:List.cshtml" caret="894" fromTop="14" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:ArtistsController.cs" caret="509" fromTop="20" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Content/d:themes/d:2012/f:style.css" caret="2904" fromTop="22" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Infrastructure/d:Utilities/f:Emailer.cs" caret="2460" fromTop="9" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Global.asax.cs" caret="3064" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Models/d:Events/f:EventPostModel.cs" caret="397" fromTop="13" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:EventsController.cs" caret="2005" fromTop="9" />
       <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Booking.cs" caret="3598" fromTop="20" />
@@ -20,29 +13,26 @@
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Web.Release.config" caret="774" fromTop="17" />
       <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="619" fromTop="16" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Page/f:ChoosePage.cshtml" caret="123" fromTop="8" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2112" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Bookings/f:Ticket.cs" caret="2112" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="388" fromTop="16" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2175" fromTop="0" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3045" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Shared/f:_Layout.cshtml" caret="1454" fromTop="8" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Lineup.cshtml" caret="465" fromTop="20" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Artists/f:Bio.cshtml" caret="234" fromTop="10" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="388" fromTop="16" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="228" fromTop="1" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3777" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:GalleriesController.cs" caret="267" fromTop="10" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Galleries/f:View.cshtml" caret="557" fromTop="18" />
+      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Assets/f:Image.cs" caret="0" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Infrastructure/d:Helpers/f:ImageHelper.cs" caret="1529" fromTop="15" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Content/d:themes/d:2012/f:style.css" caret="2071" fromTop="15" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="232" fromTop="3" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Galleries/f:Index.cshtml" caret="337" fromTop="14" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2158" fromTop="24" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="2924" fromTop="18" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="230" fromTop="2" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3529" fromTop="14" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:PaymentsController.cs" caret="3958" fromTop="22" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="421" fromTop="14" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Persistance/d:Mapping/f:EventMap.cs" caret="610" fromTop="20" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Models/d:Events/f:EventPostModel.cs" caret="397" fromTop="13" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="2139" fromTop="14" />
-      <File id="AC98DFA7-E55E-499C-8D82-4AFBFDDC37A2/d:Events/f:Event.cs" caret="2607" fromTop="24" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:EventsController.cs" caret="1872" fromTop="7" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="1807" fromTop="12" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Events/f:_Edit.cshtml" caret="2013" fromTop="16" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="3136" fromTop="25" />
@@ -56,13 +46,23 @@
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Views/d:Bookings/f:Edit.cshtml" caret="3038" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Areas/d:TartsAdmin/d:Controllers/f:BookingsController.cs" caret="2574" fromTop="5" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="481" fromTop="18" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2907" fromTop="25" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="163" fromTop="5" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Events/f:Tickets.cshtml" caret="864" fromTop="19" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Payments/f:PaymentResult.cshtml" caret="424" fromTop="18" />
       <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Booking/f:BookingComplete.cshtml" caret="211" fromTop="6" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3791" fromTop="9" />
-      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3486" fromTop="6" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3793" fromTop="9" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3488" fromTop="6" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="3164" fromTop="19" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:GalleriesController.cs" caret="0" fromTop="0" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Controllers/f:GalleriesController.cs" caret="428" fromTop="16" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Galleries/f:Index.cshtml" caret="134" fromTop="7" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Galleries/f:Index.cshtml" caret="32" fromTop="1" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2463" fromTop="11" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Content/d:themes/d:2012/f:style.css" caret="2071" fromTop="15" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/d:Partials/f:_Poll.cshtml" caret="139" fromTop="2" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Galleries/f:Index.cshtml" caret="295" fromTop="12" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="2904" fromTop="19" />
+      <File id="2AD4FC3E-E61A-4360-8779-572E413109EF/d:Views/d:Shared/f:_Layout.cshtml" caret="1723" fromTop="12" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -90,7 +90,7 @@
       <Item value="string" priority="2321" />
       <Item value="UriHostNameType`0" priority="30" />
       <Item value="DateTime`0" priority="637" />
-      <Item value="IList" priority="125" />
+      <Item value="IList" priority="157" />
       <Item value="Artist`0" priority="126" />
       <Item value="event" priority="30" />
       <Item value="Bookings" priority="160" />
@@ -135,7 +135,7 @@
       <Item value="DefaultImage" priority="160" />
       <Item value="img" priority="621" />
       <Item value="null" priority="159" />
-      <Item value="model" priority="2426" />
+      <Item value="model" priority="2456" />
       <Item value="req" priority="63" />
       <Item value="FilesStatus" priority="28" />
       <Item value="RedirectToAction`0" priority="223" />
@@ -180,16 +180,16 @@
       <Item value="obj" priority="479" />
       <Item value="Galleries" priority="32" />
       <Item value="virtual" priority="415" />
-      <Item value="Model" priority="1801" />
+      <Item value="Model" priority="1833" />
       <Item value="DefaultableList&lt;Image&gt;" priority="28" />
       <Item value="Request" priority="190" />
       <Item value="ctx" priority="31" />
       <Item value="Convert`0" priority="26" />
-      <Item value="var" priority="927" />
+      <Item value="var" priority="959" />
       <Item value="galleryID" priority="31" />
       <Item value="gallery" priority="159" />
-      <Item value="foreach" priority="245" />
-      <Item value="in" priority="95" />
+      <Item value="foreach" priority="275" />
+      <Item value="in" priority="127" />
       <Item value="helper" priority="29" />
       <Item value="width" priority="93" />
       <Item value="else" priority="319" />
@@ -378,6 +378,7 @@
       <Item value="settings" priority="31" />
       <Item value="sent" priority="63" />
       <Item value="bookingConfirmation" priority="31" />
+      <Item value="gal" priority="119" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Tarts.Content.Page">
       <Item value="Name" priority="80" />
@@ -393,7 +394,7 @@
       <Item value="GetCurrentSession`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Tarts.Persistance.GenericRepo">
-      <Item value="GetAll`1" priority="134" />
+      <Item value="GetAll`1" priority="161" />
       <Item value="Save`1" priority="378" />
       <Item value="Delete`1" priority="53" />
       <Item value="GetById`1" priority="404" />
@@ -401,9 +402,9 @@
     </ItemStatistics>
     <ItemStatistics item="RazorTransitionCompletionContext">
       <Item value="itm" priority="73" />
-      <Item value="model" priority="41" />
+      <Item value="model" priority="49" />
       <Item value="Model" priority="349" />
-      <Item value="foreach" priority="41" />
+      <Item value="foreach" priority="49" />
       <Item value="img" priority="77" />
       <Item value="helper" priority="9" />
       <Item value="width" priority="7" />
@@ -421,6 +422,7 @@
       <Item value="EnvironmentVariableTarget`0" priority="9" />
       <Item value="Evt" priority="7" />
       <Item value="payment" priority="41" />
+      <Item value="gal" priority="33" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Tarts.Web.Areas.TartsAdmin.Models.Pages.PagePostModel">
       <Item value="Name" priority="26" />
@@ -443,12 +445,12 @@
       <Item value="Remove`0" priority="26" />
       <Item value="Count" priority="83" />
       <Item value="Clear`0" priority="26" />
-      <Item value="Where`1" priority="82" />
+      <Item value="Where`1" priority="110" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Tarts.Assets.Image">
       <Item value="Created" priority="53" />
-      <Item value="Large" priority="135" />
-      <Item value="Medium" priority="189" />
+      <Item value="Large" priority="163" />
+      <Item value="Medium" priority="243" />
       <Item value="Thumb" priority="247" />
       <Item value="Name" priority="82" />
       <Item value="ID" priority="163" />
@@ -456,26 +458,26 @@
     <ItemStatistics item="CssCodeCompletionContext">
       <Item value="form" priority="5" />
       <Item value="margin-bottom" priority="23" />
-      <Item value="ul" priority="17" />
+      <Item value="ul" priority="23" />
       <Item value="galleryItems" priority="4" />
-      <Item value="li" priority="29" />
-      <Item value="display" priority="42" />
-      <Item value="inline" priority="5" />
+      <Item value="li" priority="35" />
+      <Item value="display" priority="54" />
+      <Item value="inline" priority="12" />
       <Item value="list-style" priority="11" />
       <Item value="margin" priority="71" />
-      <Item value="padding" priority="71" />
+      <Item value="padding" priority="77" />
       <Item value="h1" priority="11" />
       <Item value="a" priority="29" />
       <Item value="h2" priority="11" />
       <Item value="h3" priority="11" />
       <Item value="font-size" priority="23" />
-      <Item value="font-weight" priority="11" />
+      <Item value="font-weight" priority="17" />
       <Item value="normal" priority="5" />
       <Item value="cursor" priority="11" />
       <Item value="pointer" priority="5" />
       <Item value="img" priority="23" />
       <Item value="assetImages" priority="4" />
-      <Item value="height" priority="35" />
+      <Item value="height" priority="41" />
       <Item value="scrollbar-3dlight-color" priority="5" />
       <Item value="overflow-y" priority="17" />
       <Item value="scroll" priority="11" />
@@ -483,14 +485,14 @@
       <Item value="imageDetails" priority="4" />
       <Item value="overflow" priority="23" />
       <Item value="hidden" priority="17" />
-      <Item value="block" priority="12" />
-      <Item value="width" priority="41" />
-      <Item value="float" priority="24" />
-      <Item value="text-align" priority="42" />
+      <Item value="block" priority="19" />
+      <Item value="width" priority="47" />
+      <Item value="float" priority="30" />
+      <Item value="text-align" priority="54" />
       <Item value="right" priority="11" />
       <Item value="clearfix" priority="4" />
       <Item value="clear" priority="33" />
-      <Item value="bold" priority="5" />
+      <Item value="bold" priority="12" />
       <Item value="margin-right" priority="6" />
       <Item value="body" priority="11" />
       <Item value="background" priority="59" />
@@ -501,7 +503,7 @@
       <Item value="min-height" priority="5" />
       <Item value="inner" priority="4" />
       <Item value="margin-top" priority="17" />
-      <Item value="center" priority="18" />
+      <Item value="center" priority="32" />
       <Item value="standardform" priority="4" />
       <Item value="p" priority="11" />
       <Item value="padding-top" priority="17" />
@@ -511,7 +513,7 @@
       <Item value="tartsSlider" priority="4" />
       <Item value="footer" priority="5" />
       <Item value="color" priority="47" />
-      <Item value="border" priority="11" />
+      <Item value="border" priority="17" />
       <Item value="fbGallery" priority="9" />
       <Item value="eventArtists" priority="4" />
       <Item value="eventLineup" priority="4" />
@@ -524,6 +526,7 @@
       <Item value="dotted" priority="5" />
       <Item value="left" priority="5" />
       <Item value="z-index" priority="5" />
+      <Item value="galleries" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ITransaction">
       <Item value="IsActive" priority="26" />
@@ -578,7 +581,7 @@
     <ItemStatistics item="Qualified:Tarts.Content.Gallery">
       <Item value="Date" priority="107" />
       <Item value="Photos" priority="80" />
-      <Item value="DefaultImage" priority="135" />
+      <Item value="DefaultImage" priority="162" />
       <Item value="Update`0" priority="26" />
       <Item value="SetDefaultImage`0" priority="26" />
       <Item value="DefaultImageID" priority="82" />
@@ -587,7 +590,7 @@
       <Item value="RemovePhoto`0" priority="26" />
       <Item value="Slug" priority="54" />
       <Item value="Event" priority="53" />
-      <Item value="Name" priority="53" />
+      <Item value="Name" priority="108" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CollectionCascadeExpression`1">
       <Item value="SaveUpdate`0" priority="53" />
@@ -600,11 +603,11 @@
       <Item value="EventID" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="HtmlCodeCompletionContext">
-      <Item value="class" priority="201" />
+      <Item value="class" priority="207" />
       <Item value="ui-datepicker" priority="5" />
-      <Item value="ul" priority="23" />
+      <Item value="ul" priority="35" />
       <Item value="h3" priority="29" />
-      <Item value="li" priority="33" />
+      <Item value="li" priority="40" />
       <Item value="width" priority="48" />
       <Item value="input" priority="53" />
       <Item value="id" priority="126" />
@@ -612,7 +615,7 @@
       <Item value="Content" priority="35" />
       <Item value="type" priority="54" />
       <Item value="hidden" priority="35" />
-      <Item value="a" priority="104" />
+      <Item value="a" priority="110" />
       <Item value="rel" priority="11" />
       <Item value="div" priority="196" />
       <Item value="strong" priority="5" />
@@ -624,9 +627,9 @@
       <Item value="style" priority="56" />
       <Item value="display" priority="6" />
       <Item value="form" priority="24" />
-      <Item value="p" priority="136" />
+      <Item value="p" priority="142" />
       <Item value="span" priority="17" />
-      <Item value="href" priority="83" />
+      <Item value="href" priority="89" />
       <Item value="target" priority="18" />
       <Item value="textarea" priority="11" />
       <Item value="name" priority="41" />
@@ -649,13 +652,13 @@
       <Item value="fieldset" priority="36" />
       <Item value="input-small" priority="5" />
       <Item value="disabled" priority="6" />
-      <Item value="img" priority="5" />
-      <Item value="src" priority="11" />
-      <Item value=".." priority="29" />
+      <Item value="img" priority="11" />
+      <Item value="src" priority="17" />
+      <Item value=".." priority="41" />
       <Item value="themes" priority="11" />
       <Item value="2012" priority="11" />
       <Item value="Images" priority="11" />
-      <Item value="title" priority="42" />
+      <Item value="title" priority="49" />
       <Item value="h1" priority="18" />
       <Item value="IValidator`0" priority="9" />
       <Item value="artist" priority="6" />
@@ -706,8 +709,8 @@
       <Item value="Customer" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@ASP.Assets">
-      <Item value="MediumImage`0" priority="55" />
-      <Item value="Thumbnail`0" priority="26" />
+      <Item value="MediumImage`0" priority="82" />
+      <Item value="Thumbnail`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContextQualified">
       <Item value="find" priority="19" />
