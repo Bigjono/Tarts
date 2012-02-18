@@ -32,6 +32,7 @@ namespace Tarts.Web
             //    new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             //);
             routes.MapRoute("Home","", new { controller = "Home", action = "Index" });
+            routes.MapRoute("FBLogin","Facebooklogin", new { controller = "FacebookLogin", action = "Index" });
             routes.MapRoute("Account","Account/{action}",new { controller = "Account", Action = "Index" });
             routes.MapRoute("Galleries", "Galleries", new { controller = "Galleries", Action = "Index" });
             routes.MapRoute("GalleryView", "Galleries/{id}", new { controller = "Galleries", Action = "View", id = UrlParameter.Optional });

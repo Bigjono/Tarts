@@ -2,6 +2,7 @@
 using System.Web;
 using System.Web.Mvc;
 using Bronson.Utils;
+using Facebook.Web;
 using Tarts.Bookings;
 using Tarts.Config;
 using Tarts.Customers;
@@ -29,6 +30,7 @@ namespace Tarts.Web.Controllers
             if((Ticket == null) || (Ticket.Remaining < 1))
                 return RedirectToAction("SoldOut");
 
+            GetCustomerViaFacebook();
             if (ViewBag.Customer != null)
             {
                 var booking = new Booking(ViewBag.Customer, Ticket, 1);
@@ -38,6 +40,8 @@ namespace Tarts.Web.Controllers
 
             return View(new CreateCustomerViewModel(Ticket));
         }
+
+      
        
         [HttpPost]
         public ActionResult CustomerAccount(CreateCustomerPostModel model)
@@ -76,12 +80,7 @@ namespace Tarts.Web.Controllers
             {
                 if (existing.Password.Decrypt() == model.Password)
                 {
-                    var cookie = new HttpCookie("TartsUser", existing.ID.EncryptInteger());
-               
-                    cookie.Expires = DateTime.Now.AddDays(1);
-                    cookie.HttpOnly = true;
-                    Response.Cookies.Add(cookie);
-                    Request.Cookies.Add(cookie);
+                    AddCustomerLoginCookie(existing);
                     var booking = new Booking(existing, Ticket, 1);
                     Repo.Save(booking);
                     return RedirectToAction("ReservationSummary", new { id = booking.ID });
@@ -92,6 +91,8 @@ namespace Tarts.Web.Controllers
                 ViewBag.ErrorMessage = "No customer account was found for that email address";
             return View(new CreateCustomerViewModel(Ticket));
         }
+
+       
 
         public ActionResult ReservationSummary(int id)
         {
@@ -150,8 +151,46 @@ namespace Tarts.Web.Controllers
             return View(booking);
         }
 
+        private void AddCustomerLoginCookie(Customer existing)
+        {
+            var cookie = new HttpCookie("TartsUser", existing.ID.EncryptInteger());
 
-        
+            cookie.Expires = DateTime.Now.AddDays(1);
+            cookie.HttpOnly = true;
+            Response.Cookies.Add(cookie);
+            Request.Cookies.Add(cookie);
+        }
+
+        private void GetCustomerViaFacebook()
+        {
+            if (ViewBag.Customer == null)
+            {
+                if (FacebookWebContext.Current.IsAuthenticated())
+                {
+                    var client = new FacebookWebClient();
+                    dynamic me = client.Get("me");
+                    var customer = Repo.GetByFieldName<Customer>("FacebookID", me.id) ?? Repo.GetByFieldName<Customer>("Email", me.email);
+                    if (customer != null)
+                        ViewBag.Customer = customer;
+                    else
+                    {
+                        string fullname = me.name, firstname = me.name, surname = "";
+                        firstname = firstname.Trim();
+                        if (firstname.Contains(" "))
+                        {
+                            firstname = fullname.Substring(0, fullname.IndexOf(" "));
+                            surname = fullname.Substring(firstname.Length, fullname.Length - firstname.Length);
+                        }
+                        {
+                            var newCust = new Customer(me.email, firstname, surname, Bronson.Utils.Random.RandomString(5));
+                            Repo.Save(newCust);
+                            ViewBag.Customer = newCust;
+                            AddCustomerLoginCookie(newCust);
+                        }
+                    }
+                }
+            }
+        }
         
     }
 }

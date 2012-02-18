@@ -1,27 +1,36 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Customer Account";
 }
 @using Tarts.Web.Models.Bookings
 @model CreateCustomerViewModel
-<h2>Purchase @Model.EventName @Model.TicketName</h2>
+<h1>Purchase @Model.EventName @Model.TicketName</h1>
 
+<div id="facebookLogin">
+   <br/>
+    <h2>Facebook Users</h2> <br/>
+    <fb:login-button perms="user_location, publish_stream, email"></fb:login-button> &nbsp; login via facebook then click 
+    @Html.ActionLink("Continue to Reservation Summary", "CustomerAccount", "Booking", new { eventName=Model.EventSlug, Model.TicketID}, new { @class = "btn primary" }) 
+    <br/><br/><p><strong>This is our preferred option</strong></p>
+</div>
+<br/><br />
+<h3>Or Login/Create a Tarts Account</h3> <br/>
 <div id="newUser">
-@using (@Html.BeginForm("AccountLogin", "Booking", new { eventName = @Model.EventSlug, ticketID = @Model.TicketID }, FormMethod.Post, new { @class = "standardform" }))
-{
-    <fieldset>
-    <legend>Existing User - Sign In</legend>
-    <div class="clearfix"><label>Email</label>
-    <div class="input"><input type="text" name="Email" value="" /></div></div>
-    <div class="clearfix"><label>Password</label>
-    <div class="input"><input type="password" name="Password" value="" /></div></div>
+    @using (@Html.BeginForm("AccountLogin", "Booking", new { eventName = @Model.EventSlug, ticketID = @Model.TicketID }, FormMethod.Post, new { @class = "standardform" }))
+    {
+        <fieldset>
+            <legend>Existing User - Sign In</legend>
+            <div class="clearfix"><label>Email</label>
+                <div class="input"><input type="text" name="Email" value="" /></div></div>
+            <div class="clearfix"><label>Password</label>
+                <div class="input"><input type="password" name="Password" value="" /></div></div>
     
-    <div class="actions">
-        <input class="btn primary" type="submit" value="Next"/>
-        <a href="mailto:info@appletarts.co.uk">Forgotten Password</a>
+            <div class="actions">
+                <input class="btn primary" type="submit" value="Next"/>
+                <a href="mailto:info@appletarts.co.uk">Forgotten Password</a>
         
-    </div>
-    </fieldset>
-}
+            </div>
+        </fieldset>
+    }
 </div>
 <div id="newUser">
 @using (@Html.BeginForm("CustomerAccount", "Booking", new { eventName=@Model.EventSlug, ticketID=@Model.TicketID}, FormMethod.Post, new { @class = "standardform" }))

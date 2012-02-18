@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using StructureMap;
 using Tarts.Config;
@@ -32,7 +29,8 @@ namespace Tarts.Web.Areas.TartsAdmin.Controllers.Base
         {
             var ctrl = (Controller)filterContext.Controller;
             var usrCookie = ctrl.Request.Cookies["TartsUser"];
-            if(usrCookie != null)
+           
+            if (usrCookie != null)
             {
                 try
                 {
@@ -42,6 +40,8 @@ namespace Tarts.Web.Areas.TartsAdmin.Controllers.Base
                 }
                 catch  { }
             }
+            
+
             ctrl.ViewBag.SiteSettings = Repo.GetById<Settings>(1);
         }
        

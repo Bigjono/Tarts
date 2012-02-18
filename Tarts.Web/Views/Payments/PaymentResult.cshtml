@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Apple Tarts";
 }
 @using Tarts.Content
 @using Tarts.Web.Models.Payments
@@ -9,6 +9,7 @@
 
 @if (Model.Success)
 {
+    <h2>Thanks for buying a ticket</h2>
     <p>@Model.Message</p>
 }
 else
