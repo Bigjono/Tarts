@@ -33,8 +33,8 @@
                     {
                         <tr><td>@payment.Created.ToString("dd/MM/yyyy")</td><td>@payment.Status.ToString()</td>
                         <td>@payment.Amount.ToCurrencyString()</td>
-                        <td>@if (payment.Status == Payment.PaymentStatus.Complete)
-                            {  @Html.ActionLink("Mark as Paid", "MarkPaymentAsComplete", "Bookings", new { paymentid = payment.ID }, new { @class = "" }) }</td>
+                        <td>
+                              @Html.ActionLink("Mark as Paid", "MarkPaymentAsComplete", "Bookings", new { paymentid = payment.ID }, new { @class = "" }) </td>
                         </tr>
                             if (payment.Status != Payment.PaymentStatus.Complete)
                             {
