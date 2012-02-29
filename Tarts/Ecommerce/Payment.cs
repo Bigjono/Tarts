@@ -39,6 +39,10 @@ namespace Tarts.Ecommerce
             Created = DateTime.Now;
         }
 
+        public virtual void MarkAsSent()
+        {
+            Status = PaymentStatus.Sent;
+        }
        
     }
 }

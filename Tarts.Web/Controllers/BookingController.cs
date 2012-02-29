@@ -121,6 +121,7 @@ namespace Tarts.Web.Controllers
                 if (canMakePayment.Succeeded)
                 {
                     var payment = booking.AddPayment();
+                    payment.MarkAsSent();
                     Repo.Save(payment);
 
                     var myremotepost = new RemotePost { Url = cfg.PaypalUrl };
