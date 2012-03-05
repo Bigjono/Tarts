@@ -27,5 +27,7 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
-Deployment
-*log.txt
+
+#Nuget Pcakge  files
+[Pp]ackages/
+!.nuget/NuGet.exe
