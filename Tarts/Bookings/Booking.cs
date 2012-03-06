@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Bronson.Utils;
 using Tarts.Base;
 using Tarts.Customers;
@@ -100,11 +101,19 @@ namespace Tarts.Bookings
 
         public virtual void MarkPaymentAsComplete(Payment payment, string details)
         {
+    
             payment.Status = Payment.PaymentStatus.Complete;
             payment.Details = details;
-            TotalPaid += payment.Amount;
+            ReCalculateTotalPaid();
             if (TotalPaid >= Total) Status = BookingStatus.Complete;
             Ticket.ReCalculateTicketsSold();
+        }
+
+        private void ReCalculateTotalPaid()
+        {
+            TotalPaid = 0;
+            foreach (Payment p in Payments.Where(x => x.Status == Payment.PaymentStatus.Complete))
+                    TotalPaid += p.Amount;
         }
 
         public virtual ReturnValue CanMakePayment()

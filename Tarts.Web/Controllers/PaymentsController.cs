@@ -8,6 +8,7 @@ using Tarts.Config;
 using Tarts.Ecommerce;
 using Tarts.Persistance;
 using Tarts.Web.Infrastructure.Helpers;
+using Tarts.Web.Infrastructure.Utilities;
 using Tarts.Web.Models.Payments;
 
 namespace Tarts.Web.Controllers
@@ -92,23 +93,6 @@ namespace Tarts.Web.Controllers
                 //    view.Message = "Payment looks to be invalid, we will investigate manually";
                 //    return View(view);
                 //}
-                
-                
-                if (parser.PaymentStatus.ToLower() == "completed")
-                {
-                    payment.Booking.MarkPaymentAsComplete(payment, PayPalPDTParser.ToString(parser));
-                    Repo.Save(payment.Booking);
-                    RedirectToAction("BookingComplete", "Booking", new {id = payment.Booking.ID});
-                }
-                else
-                {
-                    payment.Booking.MarkPaymentAsVerfied(payment, parser.PaymentStatus, PayPalPDTParser.ToString(parser));
-                    Repo.Save(payment.Booking);
-
-                    view.Success = true;
-                    view.Message = "Thank you your payment has been verfied. We will email you as soon as it is processed and your booking is confirmed. ";
-                    return View(view);
-                }
 
                 try
                 {
@@ -121,10 +105,33 @@ namespace Tarts.Web.Controllers
                         client.Post("/me/feed", args);
                     }
                 }
-                catch 
+                catch
                 {
-                    
+
                 }
+                
+                
+                if (parser.PaymentStatus.ToLower() == "completed")
+                {
+                    payment.Booking.MarkPaymentAsComplete(payment, PayPalPDTParser.ToString(parser));
+                    Repo.Save(payment.Booking);
+                    var settings = Repo.GetById<Settings>(1);
+                    var emailer = new Emailer(settings);
+                    var sent = emailer.SendEmail(payment.Booking.Customer.Email, payment.Booking.Customer.FirstName + " " + payment.Booking.Customer.Surname,
+                                        "Apple Tarts Booking Confirmation", payment.Booking.Event.BookingConfirmation.ProcessVelocityTemplate(payment.Booking));
+                    return RedirectToAction("BookingComplete", "Booking", new {id = payment.Booking.ID});
+                }
+                else
+                {
+                    payment.Booking.MarkPaymentAsVerfied(payment, parser.PaymentStatus, PayPalPDTParser.ToString(parser));
+                    Repo.Save(payment.Booking);
+
+                    view.Success = true;
+                    view.Message = "Thank you your payment has been verfied. We will email you as soon as it is processed and your booking is confirmed. ";
+                    return View(view);
+                }
+
+              
                 
             }
                  
