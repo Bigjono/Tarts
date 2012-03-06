@@ -64,3 +64,5 @@ C:\@Projects\Personal\Tarts\Tarts\bin\Debug\StructureMap.xml
 C:\@Projects\Personal\Tarts\Tarts\obj\Debug\ResolveAssemblyReference.cache
 C:\@Projects\Personal\Tarts\Tarts\obj\Debug\Tarts.dll
 C:\@Projects\Personal\Tarts\Tarts\obj\Debug\Tarts.pdb
+C:\@Projects\Tarts\Tarts\bin\Debug\ImageResizer.dll
+C:\@Projects\Tarts\Tarts\bin\Debug\ImageResizer.xml
