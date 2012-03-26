@@ -45,6 +45,8 @@ namespace Tarts.Bookings
             return "EV{0}/T{1}/C{2}/{3}".FormatString(Event.ID, Ticket.ID, Customer.ID.EncryptInteger(), DateTime.Now.ToString("MMddHHmmss"));
         }
 
+        public virtual string VoucherCodeApplied { get; set; }
+        public virtual decimal DiscountApplied { get; set; }
         public virtual string Reference { get; set; }
         public virtual int Quantity { get; set; }
         public virtual DateTime Created { get; set; }
@@ -53,6 +55,7 @@ namespace Tarts.Bookings
         public virtual decimal TotalPaid { get; set; }
         public virtual BookingStatus Status { get; set; }
 
+        public virtual Voucher Voucher { get; set; }
         public virtual Event Event { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Ticket Ticket { get; set; }
@@ -69,13 +72,26 @@ namespace Tarts.Bookings
 
         public virtual decimal Total
         {
-            get{ return TicketsTotal + FeesTotal; }
+            get{ return (TicketsTotal + FeesTotal) - DiscountApplied; }
         }
 
         public virtual void UpdateQuantity(int qty)
         {
             Quantity = qty;
             if (Quantity < 1) Quantity = 1;
+        }
+
+
+        public virtual void ApplyVoucher(Voucher voucher)
+        {
+            decimal voucherDiscount = (voucher.DiscountApplication == Voucher.DiscountApplications.BookingTotal) ? voucher.Discount : voucher.Discount * Quantity;
+            if (Voucher != null) return;
+            if (!Voucher.Enabled) return;
+            if ((TicketsTotal - voucherDiscount) < 1) return;
+
+            Voucher = voucher;
+            VoucherCodeApplied = voucher.Code;
+            DiscountApplied = voucherDiscount;
         }
 
         public virtual Payment AddPayment()
