@@ -84,6 +84,7 @@
     <Compile Include="Assets\Image.cs" />
     <Compile Include="Bookings\Booking.cs" />
     <Compile Include="Bookings\Ticket.cs" />
+    <Compile Include="Bookings\Voucher.cs" />
     <Compile Include="Company\ContactDetails.cs" />
     <Compile Include="Config\Settings.cs" />
     <Compile Include="Content\Gallery.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Persistance\GenericRepo.cs" />
     <Compile Include="Persistance\Mapping\ArtistMap.cs" />
     <Compile Include="Persistance\Mapping\BookingMap.cs" />
+    <Compile Include="Persistance\Mapping\VoucherMap.cs" />
     <Compile Include="Persistance\Mapping\PaymentMap.cs" />
     <Compile Include="Persistance\Mapping\SettingsMap.cs" />
     <Compile Include="Persistance\Mapping\CustomerMap.cs" />

@@ -46,9 +46,20 @@
     <div class="input"><input class="span1" type="text" name="Quantity" value="@Model.Quantity"/>
     <input type="submit"class="btn" value="Update"/>
     </div></div>
-    <div class="clearfix"><label>Ticket Price</label>
-    <div class="input"><p>@Model.TicketPrice.ToCurrency() <span class="help-inline"> plus @Model.BookingFee.ToCurrency() booking fee</span></p></div></div>
-    <div class="clearfix"><label>Booking Total</label>
+        <div class="clearfix"><label>Ticket Price</label>
+            <div class="input"><p>@Model.TicketPrice.ToCurrency() <span class="help-inline"> plus @Model.BookingFee.ToCurrency() booking fee</span></p></div></div>
+    @if(Model.Voucher != null)
+    {
+       <div class="clearfix"><label>Voucher</label>
+       <div class="input"> <p>Voucher code applied saving @Model.DiscountApplied.ToCurrencyString()</p></div></div>
+    }
+    else
+    {
+        <div class="clearfix"><label>Voucher Code</label>
+    <div class="input"><input class="span2" type="text" name="VoucherCode" value="@Model.VoucherCodeApplied"/><input type="submit"class="btn" value="Apply Voucher"/></div></div>
+    }
+    
+        <div class="clearfix"><label>Booking Total</label>
     <div class="input"><p>@Model.Total.ToCurrency()</p></div></div>
     </fieldset>
     }

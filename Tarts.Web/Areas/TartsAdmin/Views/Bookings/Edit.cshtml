@@ -23,6 +23,8 @@
             <div class="input"><p>@Model.TicketsTotal.ToCurrency(), Fees @Model.FeesTotal.ToCurrency() = @Model.Total.ToCurrency() </p></div></div>
             <div class="clearfix"><label>Customer</label>
             <div class="input"><p>@Model.Customer.FirstName @Model.Customer.Surname - <a href="mailto:@(Model.Customer.Email)">@Model.Customer.Email</a></p></div></div>
+            <div class="clearfix"><label>Voucher</label>
+            <div class="input">@if(Model.Voucher != null){<p>@Model.VoucherCodeApplied - Discounting: @Model.DiscountApplied.ToCurrencyString()</p>}</div></div>
         </div>
         <div class="span8">
             <div class="well">

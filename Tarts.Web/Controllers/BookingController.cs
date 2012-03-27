@@ -105,6 +105,19 @@ namespace Tarts.Web.Controllers
         {
             var booking = Repo.GetById<Booking>(model.bookingID);
             booking.UpdateQuantity(model.Quantity);
+            if(!string.IsNullOrWhiteSpace(model.VoucherCode) && (string.IsNullOrWhiteSpace(booking.VoucherCodeApplied)))
+            {
+                var voucher = Repo.GetByFieldName<Voucher>("Code", model.VoucherCode);
+                if(voucher != null)
+                {
+                    if(voucher.Enabled)
+                        booking.ApplyVoucher(voucher);
+                    else
+                        ViewBag.ErrorMessage = "Sorry this voucher is no longer available";
+                }
+                else
+                    ViewBag.ErrorMessage = "Sorry no voucher found";
+            }
             Repo.Save(booking);
             return View(booking);
         }

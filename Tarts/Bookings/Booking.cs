@@ -79,14 +79,15 @@ namespace Tarts.Bookings
         {
             Quantity = qty;
             if (Quantity < 1) Quantity = 1;
+            if(Voucher != null) ApplyVoucher(Voucher);
         }
 
 
         public virtual void ApplyVoucher(Voucher voucher)
         {
             decimal voucherDiscount = (voucher.DiscountApplication == Voucher.DiscountApplications.BookingTotal) ? voucher.Discount : voucher.Discount * Quantity;
-            if (Voucher != null) return;
-            if (!Voucher.Enabled) return;
+            if (voucher == null) return;
+            if (!voucher.Enabled) return;
             if ((TicketsTotal - voucherDiscount) < 1) return;
 
             Voucher = voucher;
