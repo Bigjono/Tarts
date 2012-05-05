@@ -9,5 +9,6 @@ namespace Tarts.Web.Models.Bookings
     {
         public int bookingID { get; set; }
         public int Quantity { get; set; }
+        public string VoucherCode { get; set; }
     }
 }

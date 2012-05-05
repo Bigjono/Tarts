@@ -18,8 +18,11 @@ namespace Tarts.Persistance.Mapping
             Map(x => x.TicketPrice);
             Map(x => x.BookingFee);
             Map(x => x.TotalPaid);
+            Map(x => x.DiscountApplied);
+            Map(x => x.VoucherCodeApplied);
             Map(x => x.Status).CustomType(typeof(Booking.BookingStatus)).Default((Booking.BookingStatus.Reservation.ToString()));
 
+            References(x => x.Voucher).Column("VoucherID").NotFound.Ignore();
             References(x => x.Event).Column("EventID").NotFound.Ignore();
             References(x => x.Customer).Column("CustomerID").NotFound.Ignore();
             References(x => x.Ticket).Column("TicketID").NotFound.Ignore();
